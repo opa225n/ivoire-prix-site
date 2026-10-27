@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
+# Le plan du site est servi par le Worker (ancienne adresse), mais il liste les adresses de ivoireprix.tontine-ci.com
 Sitemap: https://ivoire-prix-robot.vaniebigohiroland.workers.dev/sitemap.xml

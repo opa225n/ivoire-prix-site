@@ -601,6 +601,13 @@ header #sf .go{border-left:0;border-radius:999px;margin:3px}
 .auth h1{margin-top:0}
 .auth .tabs a.on{border-color:var(--gold)}
 @media (min-width:721px){.bestbox .btn{width:auto}}
+
+/* Favoris et compte : chaque produit suivi dans une carte */
+.wcard{padding:12px 12px 8px;background:var(--card);border:1px solid var(--line);border-radius:18px;transition:border-color .2s,box-shadow .2s}
+.wcard:hover{border-color:var(--gold);box-shadow:0 12px 28px var(--tk-shadow)}
+.wcard .card .img{background:var(--tile);border-radius:12px}
+.tgt-row input{border-radius:var(--r-m);border-width:1.5px}
+.tgt-row input:focus{outline:none;border-color:var(--ink);box-shadow:0 0 0 4px var(--orange-t)}
 </style>
 </head>
 <body>
@@ -1551,9 +1558,9 @@ async function myAccount(favoris = false) {
       (gone.length ? `<p class="mut">${gone.length} produit${gone.length > 1 ? 's' : ''} suivi${gone.length > 1 ? 's' : ''} n'${gone.length > 1 ? 'ont' : 'a'} plus d'offre en ligne pour le moment.</p>` : '');
   }
   app.innerHTML = favoris
-    ? `<h1>Mes favoris${rows && rows.length ? ` (${rows.length})` : ''}</h1>
+    ? `<h1 class="ptitle">Mes favoris${rows && rows.length ? ` (${rows.length})` : ''}</h1>
     <p class="mut">Les produits que vous suivez. Vous voyez ici quand leur prix baisse.</p>${body}`
-    : `<h1>Mon compte</h1>
+    : `<h1 class="ptitle">Mon compte</h1>
     <p class="mut">Connecté avec ${esc(me.email || '')}${name ? ` (${esc(name)})` : ''}</p>
     <h2>Mes produits suivis${rows && rows.length ? ` (${rows.length})` : ''}</h2>${body}
     <p style="margin-top:28px"><button type="button" class="follow" id="logout">Se déconnecter</button></p>`;

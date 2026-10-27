@@ -1,0 +1,1655 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" type="image/svg+xml" href="/icons/icon.svg">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#F77F00">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Ivoire Prix">
+<meta name="description" content="Comparez les prix de Jumia, DjokStore, Jachete, Négoce CI, Phones Store, Discount Ivoire, Dream Store, Adjovan, Goci.ci et EAS CI avant d'acheter en Côte d'Ivoire.">
+<link rel="canonical" href="https://ivoire-prix-robot.vaniebigohiroland.workers.dev/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Ivoire Prix">
+<meta property="og:url" content="https://ivoire-prix-robot.vaniebigohiroland.workers.dev/">
+<meta property="og:image" content="https://ivoire-prix-robot.vaniebigohiroland.workers.dev/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ivoire-prix-robot.vaniebigohiroland.workers.dev/og-image.png">
+<meta property="og:title" content="Ivoire Prix : comparateur de prix en Côte d'Ivoire">
+<meta property="og:description" content="Comparez les prix de Jumia, DjokStore, Jachete, Négoce CI, Phones Store, Discount Ivoire, Dream Store, Adjovan, Goci.ci et EAS CI avant d'acheter en Côte d'Ivoire.">
+<link rel="preconnect" href="https://zhmdvtmziqdjxxxpilbh.supabase.co" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@90..125,400..800&display=swap">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Ivoire Prix","url":"https://ivoire-prix-robot.vaniebigohiroland.workers.dev/","inLanguage":"fr-CI","description":"Comparateur de prix des boutiques en ligne de Côte d'Ivoire"}</script>
+<title>Ivoire Prix : comparateur de prix en Côte d'Ivoire</title>
+<style>
+/* Ivoire Prix : orange et vert du drapeau, une seule police (Archivo) dont on varie la largeur :
+   large pour les prix et les titres, étroite pour les petites indications.
+   Toutes les couleurs passent par ces variables : le mode sombre ne fait que les redéfinir. */
+:root{
+  color-scheme:light;
+  --paper:#FBFBF9; --card:#FFFFFF; --ink:#1E2320; --mut:#5D645F; --line:#E1E4DF; --field:#C9CEC8;
+  --well:#F0F1ED; --band:#F0F1ED; --tile:#F0F1ED; --on-tile:#5D645F; --dots:#BEC4BD; --tk-bg:#FFFFFF;
+  --s1:#2a78d6; --s2:#c2457a; --s3:#9a6b00; --s4:#0E7C74; --s5:#6b4bb8; --s6:#5f7a1f; --s7:#a8431f; --s8:#555d6b; --s9:#8a6d00; --s10:#b3261e;
+  --r-s:6px; --r-m:10px; --r-l:16px;
+  --orange:#F77F00; --orange-h:#FF9426; --orange-t:#FFE6CC; --on-orange:#1E2320;
+  --green:#00754A; --green-t:#E2F2E9; --on-green:#FFFFFF; --red:#B42318;
+  --err-bg:#FDECEC; --err-ink:#8E1B1B; --note-ink:#0B4F33;
+  --tk-edge:rgba(30,35,32,.28); --tk-shadow:rgba(30,35,32,.10);
+  --chev:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1.5l5 5 5-5' fill='none' stroke='%231E2320' stroke-width='2'/%3E%3C/svg%3E");
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  color-scheme:dark;
+  --paper:#141816; --card:#1D2220; --ink:#ECEEEA; --mut:#A4ABA6; --line:#2E3531; --field:#4A524D;
+  --well:#1F2421; --band:#0E110F; --tile:#BFC4BD; --dots:#59615C; --tk-bg:#262C28;
+  --s1:#3987e5; --s2:#d55181; --s3:#c98500; --s4:#2BB3A6; --s5:#9b7fe0; --s6:#a9c24a; --s7:#e0805a; --s8:#9aa4b8; --s9:#d4b44a; --s10:#ff7b72;
+  --orange-t:rgba(247,127,0,.25); --green:#45C98C; --green-t:#163323; --on-green:#0B1F15; --red:#FF8A80;
+  --err-bg:#3A1C1C; --err-ink:#FFB4AB; --note-ink:#A6F0C6;
+  --tk-edge:rgba(255,255,255,.14); --tk-shadow:rgba(0,0,0,.5);
+  --chev:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1.5l5 5 5-5' fill='none' stroke='%23ECEEEA' stroke-width='2'/%3E%3C/svg%3E");
+}}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --paper:#141816; --card:#1D2220; --ink:#ECEEEA; --mut:#A4ABA6; --line:#2E3531; --field:#4A524D;
+  --well:#1F2421; --band:#0E110F; --tile:#BFC4BD; --dots:#59615C; --tk-bg:#262C28;
+  --s1:#3987e5; --s2:#d55181; --s3:#c98500; --s4:#2BB3A6; --s5:#9b7fe0; --s6:#a9c24a; --s7:#e0805a; --s8:#9aa4b8; --s9:#d4b44a; --s10:#ff7b72;
+  --orange-t:rgba(247,127,0,.25); --green:#45C98C; --green-t:#163323; --on-green:#0B1F15; --red:#FF8A80;
+  --err-bg:#3A1C1C; --err-ink:#FFB4AB; --note-ink:#A6F0C6;
+  --tk-edge:rgba(255,255,255,.14); --tk-shadow:rgba(0,0,0,.5);
+  --chev:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1.5l5 5 5-5' fill='none' stroke='%23ECEEEA' stroke-width='2'/%3E%3C/svg%3E");
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;font-family:Archivo,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:16px;line-height:1.5;color:var(--ink);background:var(--paper)}
+a{color:inherit;text-decoration:none}
+button,input,select{font:inherit;color:inherit}
+button{cursor:pointer}
+:focus-visible{outline:3px solid var(--ink);outline-offset:2px;border-radius:4px}
+#app:focus{outline:none}
+[hidden]{display:none!important}
+svg.ic{flex:none;display:block}
+.wrap{max-width:1120px;margin:0 auto;padding:0 16px}
+.mut{color:var(--mut);font-size:14px}
+h1{font-weight:800;font-stretch:112%;font-size:clamp(28px,4.4vw,44px);line-height:1.05;letter-spacing:-.015em;margin:32px 0 10px}
+h2{font-weight:750;font-stretch:106%;font-size:21px;line-height:1.2;letter-spacing:-.005em;margin:56px 0 18px}
+
+/* En-tête */
+header{background:var(--paper);position:sticky;top:0;z-index:5;border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;gap:4px 6px;flex-wrap:nowrap;padding:8px 0 6px}
+.logo span,.acct span,#sf .go-t{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.logo{display:flex;align-items:center;gap:9px;min-height:44px;min-width:44px;font-weight:800;font-stretch:118%;font-size:21px;letter-spacing:-.02em;white-space:nowrap}
+.logo i{width:34px;height:34px;border-radius:var(--r-m);background:var(--orange);display:grid;place-items:center;flex:none}
+#sf{flex:1;display:flex;min-height:48px;min-width:0;max-width:none;border:2px solid var(--ink);border-radius:var(--r-m);background:var(--card);overflow:hidden}
+#sf:focus-within{box-shadow:0 0 0 4px var(--orange-t)}
+#q{flex:1;min-width:0;border:0;background:transparent;padding:9px 8px 9px 10px;font-size:16px}
+#q:focus{outline:none}
+#q::placeholder{color:var(--mut)}
+#q::-webkit-search-cancel-button{-webkit-appearance:none;appearance:none;width:18px;height:18px;cursor:pointer;background:var(--mut);
+  -webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M6 6l12 12M18 6 6 18' stroke='black' stroke-width='2.6' stroke-linecap='round'/%3E%3C/svg%3E") center/18px no-repeat;
+          mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M6 6l12 12M18 6 6 18' stroke='black' stroke-width='2.6' stroke-linecap='round'/%3E%3C/svg%3E") center/18px no-repeat}
+#sf .cam:focus-visible,#sf .go:focus-visible{outline:3px solid var(--ink);outline-offset:-6px;border-radius:var(--r-s)}
+#sf .cam{flex:none;display:grid;place-items:center;width:44px;background:none;border:0}
+#sf .cam:hover{background:var(--well)}
+#sf .go{flex:none;background:var(--orange);border:0;border-left:2px solid var(--ink);min-width:48px;padding:0 13px;font-weight:800;font-size:16px;color:var(--on-orange)}
+#sf .go:hover{background:var(--orange-h)}
+#sf .go-i{display:block}
+.acct{display:flex;align-items:center;justify-content:center;gap:7px;margin-left:0;min-height:44px;min-width:44px;padding:8px;border-radius:var(--r-m);font-weight:650;font-size:15px;white-space:nowrap}
+.acct:hover{background:var(--well)}
+nav{display:flex;gap:0 24px;overflow-x:auto;scrollbar-width:none}
+/* Téléphone : tant qu'il reste des catégories hors de l'écran, une flèche reste collée à droite (nav.scroll-on, posée par le script) */
+nav.scroll-on::after{content:"›";content:"›" / "";position:sticky;right:0;flex:none;align-self:center;margin-left:-8px;padding:0 4px 3px 28px;font-size:26px;font-weight:700;line-height:1;color:var(--ink);background:linear-gradient(90deg,transparent,var(--paper) 55%)}
+nav::-webkit-scrollbar{display:none}
+nav a{white-space:nowrap;padding:12px 0 11px;font-size:15px;font-weight:600;color:var(--mut);border-bottom:3px solid transparent}
+nav a:hover{color:var(--ink)}
+nav a[aria-current]{color:var(--ink);border-bottom-color:var(--orange)}
+
+/* Accueil : le ticket de comparaison */
+.hero{display:grid;grid-template-columns:minmax(0,1fr);gap:24px 56px;align-items:center;padding:28px 0 36px;
+  background:var(--band);box-shadow:0 0 0 100vmax var(--band);clip-path:inset(0 -100vmax)}
+.hero h1{margin:0 0 16px;font-size:clamp(34px,10vw,44px);line-height:1}
+.hero p{margin:0;font-size:16px;line-height:1.55;max-width:42ch;color:var(--ink)}
+.tk-wrap{filter:drop-shadow(0 0 1px var(--tk-edge)) drop-shadow(0 14px 22px var(--tk-shadow))}
+.ticket{background:var(--tk-bg);padding:16px 16px 30px;border-radius:var(--r-s) var(--r-s) 0 0;
+  -webkit-mask:conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) 50%/18px 100%;
+          mask:conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) 50%/18px 100%}
+.tk-prod{display:flex;gap:14px;align-items:center;padding-bottom:16px;border-bottom:2px dashed var(--line)}
+.tk-img{flex:none;width:60px;height:60px;border-radius:var(--r-m);background:var(--tile);color:var(--on-tile);display:grid;place-items:center;overflow:hidden}
+.tk-img img{width:84%;height:84%;object-fit:contain;mix-blend-mode:multiply}
+.tk-prod b{display:block;font-weight:650;font-size:15px;line-height:1.3}
+.tk-prod:hover b{text-decoration:underline;text-underline-offset:3px}
+.tk-date{display:block;margin-top:3px;font-size:14px;font-stretch:90%;color:var(--mut)}
+.tk-rows{list-style:none;margin:8px 0 10px;padding:0}
+.tk-rows li{display:flex;align-items:baseline;gap:10px;padding:8px 0;font-size:16px}
+.tk-rows .price{font-size:19px}
+.tk-rows li.best .price{color:var(--green)}
+.leader{flex:1;min-width:16px;border-bottom:2px dotted var(--dots);transform:translateY(-5px)}
+.tk-gap{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin:0;padding-top:14px;border-top:2px dashed var(--line);font-weight:650}
+.tk-gap .price{font-size:19px;color:var(--green)}
+.tk-link{display:inline-block;margin-top:0;padding:12px 0 11px;font-size:14px;font-weight:650;text-decoration:underline;text-underline-offset:3px}
+
+/* Grilles de produits */
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px 12px}
+.card{display:flex;flex-direction:column;align-items:flex-start;min-width:0}
+.img{position:relative;width:100%;aspect-ratio:1;background:var(--tile);color:var(--on-tile);border-radius:var(--r-l);display:grid;place-items:center;overflow:hidden}
+.img img{width:80%;height:80%;object-fit:contain;mix-blend-mode:multiply}
+.card .img{margin-bottom:12px;aspect-ratio:4/3}
+.card:active .img{transform:scale(.985)}
+.promo{position:absolute;top:10px;left:10px;background:#FFFFFF;color:#1E2320;font-size:13px;font-weight:700;line-height:1;padding:5px 7px;border-radius:var(--r-s);box-shadow:0 0 0 1px rgba(30,35,32,.14)}
+.card .pl{order:1;display:flex;flex-direction:column;margin-bottom:4px}
+.card h3{order:2;margin:0 0 4px;font-size:14px;font-weight:500;line-height:1.35;overflow-wrap:anywhere}
+.card .meta{order:3;display:flex;flex-direction:column;align-items:flex-start}
+.card .down,.card .up,.card .same{order:1;margin:0 0 6px}
+.card.out .price{color:var(--mut)}
+.card.out .img{opacity:.6}
+.card:hover h3{text-decoration:underline;text-underline-offset:3px}
+.from{font-size:14px;font-stretch:90%;color:var(--mut);line-height:1.2}
+.price{font-weight:800;font-stretch:112%;font-size:18px;line-height:1.15;letter-spacing:-.01em;font-variant-numeric:tabular-nums;white-space:nowrap}
+.price small{font-size:max(.56em,12px);font-weight:700;letter-spacing:0;margin-left:.3em}
+.cnt{font-size:14px;color:var(--mut);margin-top:1px}
+.save{display:inline-block;max-width:100%;font-stretch:92%;margin-top:6px;padding:3px 8px;border-radius:var(--r-s);background:var(--green-t);color:var(--green);font-size:14px;font-weight:700;line-height:1.35}
+.ptitle{font-size:clamp(26px,3.6vw,36px)}
+.tools{display:grid;grid-template-columns:auto minmax(0,1fr);gap:10px 12px;align-items:center;margin:0 0 24px;padding:12px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.tools label{display:contents;align-items:center;gap:8px;font-size:14px;color:var(--mut)}
+.tools select{appearance:none;-webkit-appearance:none;width:100%;max-width:100%;min-height:44px;padding:7px 32px 7px 11px;border:1.5px solid var(--field);border-radius:var(--r-m);font-size:14px;color:var(--ink);
+  background:var(--card) var(--chev) no-repeat right 11px center}
+.tools .count{grid-column:1/-1;margin-left:0}
+.more{display:block;margin:32px auto 0;background:var(--card);border:2px solid var(--ink);border-radius:var(--r-m);padding:10px 22px;font-weight:700}
+.more:hover{background:var(--well)}
+
+/* Fiche produit */
+.top{display:grid;grid-template-columns:132px minmax(0,1fr);gap:4px 16px;margin-top:18px;align-items:start}
+.top .img{border-radius:var(--r-m);grid-row:span 2;align-self:start}
+.top .info{display:contents}
+.top .brand,.top .pname{grid-column:2}
+.top .bestbox,.top .desc,.top .fol{grid-column:1/-1}
+.top .fol{margin-top:6px}
+.top .bestbox{margin-top:8px}
+.brand:empty{margin:0}
+.brand{margin:0 0 6px;font-size:14px;font-weight:650;font-stretch:92%;color:var(--mut)}
+.pname{margin:0 0 14px;font-weight:700;font-stretch:100%;font-size:19px;line-height:1.22;letter-spacing:-.005em;overflow-wrap:anywhere}
+.bestbox{margin:0 0 18px;padding-top:14px;border-top:2px solid var(--ink)}
+.bestbox .lbl{display:block;font-size:14px;color:var(--mut)}
+.bestbox .price{font-size:clamp(24px,9.5vw,30px)}
+.bestbox .where{font-weight:650}
+.gain{margin:8px 0 0;font-size:15px;font-weight:650;color:var(--green)}
+.bestbox .btn{display:flex;width:100%;margin-top:14px;white-space:normal;text-align:center}
+.desc{max-width:65ch}
+.fol{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;margin:18px 0 0}
+.follow{display:inline-flex;align-items:center;gap:8px;background:var(--card);border:2px solid var(--ink);border-radius:var(--r-m);padding:9px 16px;font-size:15px;font-weight:700}
+.follow:hover{background:var(--well)}
+.follow.on{background:var(--ink);color:var(--paper)}
+.offers-wrap{max-width:820px}
+.offers{list-style:none;margin:0;padding:2px 16px 28px}
+.offer{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:10px 12px;padding:18px 0;border-bottom:2px dashed var(--line)}
+.offer:last-child{border-bottom:0}
+.offer .shop strong{font-size:17px;font-weight:700}
+.sub{display:block;margin-top:2px;font-size:14px;font-stretch:94%;color:var(--mut)}
+.offer .leader{display:none;align-self:center;transform:none}
+.offer .btn{grid-column:1/-1}
+.offer .shop{min-width:0}
+.offer .amt{text-align:right}
+.offer.best .price{color:var(--green)}
+.offer.out .price,.offer.out .shop strong{color:var(--mut)}
+.offer .oos{grid-column:1/-1;margin:0}
+.rank{margin:-8px 0 14px;max-width:65ch}
+#app > .err{margin-top:24px}
+.offer.out .price{font-size:16px;font-weight:650}
+.err .btn{margin-top:10px}
+.err p{margin:0}
+.tag{display:inline-block;margin-left:8px;padding:2px 7px;border-radius:var(--r-s);background:var(--green);color:var(--on-green);font-size:13px;font-weight:700;vertical-align:2px}
+.old-price{font-size:14px;color:var(--mut);text-decoration:line-through}
+.discount{display:inline-block;margin-left:6px;padding:1px 6px;border-radius:var(--r-s);border:1px solid var(--field);color:var(--ink);font-size:13px;font-weight:700}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:9px 16px;border:2px solid var(--ink);border-radius:var(--r-m);background:var(--card);font-weight:750;white-space:nowrap}
+.btn:hover{background:var(--well)}
+.offer.best .btn,.btn.primary{background:var(--orange);border-color:var(--orange);color:var(--on-orange)}
+.offer.best .btn:hover,.btn.primary:hover{background:var(--orange-h);border-color:var(--orange-h)}
+.btn:active,.follow:active,.more:active,#sf .go:active,.auth form button:active,.auth .oauth:active{transform:translateY(1px)}
+.hist{position:relative;max-width:760px}
+.hist svg{display:block;max-width:100%;height:auto;touch-action:pan-y}
+.hist svg text{font-size:12.5px}
+.hist .grid-line{stroke:var(--line)}
+.hist .axis{fill:var(--mut)}
+.hist .lab{fill:var(--ink);font-weight:600}
+.hist .ln{fill:none;stroke-width:2;stroke-linejoin:round}
+.hist .mk{stroke:var(--paper);stroke-width:2}
+.hist .cross{stroke:var(--mut);stroke-width:1}
+.s1{stroke:var(--s1)}.s2{stroke:var(--s2)}.s3{stroke:var(--s3)}.s4{stroke:var(--s4)}.s5{stroke:var(--s5)}.s6{stroke:var(--s6)}.s7{stroke:var(--s7)}.s8{stroke:var(--s8)}.s9{stroke:var(--s9)}.s10{stroke:var(--s10)}
+circle.s1{fill:var(--s1)}circle.s2{fill:var(--s2)}circle.s3{fill:var(--s3)}circle.s4{fill:var(--s4)}circle.s5{fill:var(--s5)}circle.s6{fill:var(--s6)}circle.s7{fill:var(--s7)}circle.s8{fill:var(--s8)}circle.s9{fill:var(--s9)}circle.s10{fill:var(--s10)}
+.hist .lg{display:flex;flex-wrap:wrap;gap:4px 18px;margin:0 0 8px;font-size:14px}
+.hist .lg span{display:inline-flex;align-items:center;gap:6px}
+.hist p{max-width:65ch}
+.tip{position:absolute;top:34px;z-index:2;min-width:150px;padding:8px 10px;border-radius:var(--r-m);background:var(--card);color:var(--ink);font-size:13px;line-height:1.45;pointer-events:none;
+  box-shadow:0 0 0 1px var(--line),0 8px 18px var(--tk-shadow)}
+.tip b{display:block;margin-bottom:2px}
+.tip span{display:flex;align-items:center;gap:6px;white-space:nowrap}
+.tip strong{margin-left:auto;padding-left:10px;font-variant-numeric:tabular-nums}
+.nohist{margin-top:40px}
+.htable{margin-top:10px;font-size:14px}
+.htable summary{cursor:pointer;font-weight:650;text-decoration:underline;text-underline-offset:3px;width:max-content}
+.htable table{border-collapse:collapse;margin-top:8px}
+.htable th,.htable td{padding:5px 14px 5px 0;text-align:left;border-bottom:1px solid var(--line)}
+.htable td.n{text-align:right;font-variant-numeric:tabular-nums}
+
+/* Messages */
+.err{background:var(--err-bg);color:var(--err-ink);padding:12px 14px;border-radius:var(--r-m)}
+.note{background:var(--green-t);color:var(--note-ink);padding:12px 14px;border-radius:var(--r-m)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 0}
+.chips a{display:inline-flex;align-items:center;min-height:44px;padding:8px 14px;border:1.5px solid var(--field);border-radius:999px;font-size:14px;font-weight:600}
+.chips a:hover{border-color:var(--ink)}
+.ask{max-width:560px}
+.ask .fol .btn{min-width:150px}
+.skel{padding-top:32px}
+.skel .sk-t{height:34px;width:min(420px,70%);border-radius:var(--r-s);background:var(--well)}
+.sk-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px 12px;margin-top:28px}
+.sk-grid i{display:block;aspect-ratio:.72;border-radius:var(--r-l);background:linear-gradient(var(--well) 0 0) top/100% 72% no-repeat,linear-gradient(var(--well) 0 0) 0 84%/80% 7% no-repeat,linear-gradient(var(--well) 0 0) 0 100%/55% 7% no-repeat}
+
+/* Recherche par photo */
+.photo-q{display:flex;gap:16px;align-items:center;margin:28px 0 4px}
+.photo-q img{width:80px;height:80px;object-fit:cover;border-radius:var(--r-m);border:1px solid var(--line);flex:none}
+.photo-q p{margin:2px 0}
+.pbar{height:8px;max-width:320px;margin-top:10px;background:var(--well);border-radius:99px;overflow:hidden}
+.pbar i{display:block;height:100%;width:0;background:var(--orange);transition:width .2s}
+
+/* Compte */
+.auth{max-width:420px;margin:44px auto 24px}
+.auth h1{margin:0 0 6px;font-size:32px}
+.auth .tabs{display:flex;gap:24px;margin:22px 0 16px;border-bottom:1px solid var(--line)}
+.auth .tabs a{padding:8px 0;margin-bottom:-1px;border-bottom:3px solid transparent;font-weight:650;color:var(--mut)}
+.auth .tabs a.on{color:var(--ink);border-color:var(--orange)}
+.auth label{display:block;margin:16px 0 0;font-size:14px;font-weight:650}
+.auth input{display:block;width:100%;margin-top:6px;padding:12px 14px;border:2px solid var(--field);border-radius:var(--r-m);background:var(--card);font-size:16px}
+.auth input:focus{outline:none;border-color:var(--ink);box-shadow:0 0 0 4px var(--orange-t)}
+.auth form button{display:block;width:100%;margin-top:18px;padding:13px 18px;border:0;border-radius:var(--r-m);background:var(--orange);color:var(--on-orange);font-size:16px;font-weight:800}
+.auth form button:hover{background:var(--orange-h)}
+.auth form button:disabled{opacity:.6;cursor:wait}
+.auth .oauth{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;margin-top:10px;padding:11px 18px;border:2px solid var(--field);border-radius:var(--r-m);background:var(--card);font-weight:650}
+.auth .oauth:hover{border-color:var(--ink)}
+.auth .sep{display:flex;align-items:center;gap:10px;margin:20px 0 0;font-size:13px;color:var(--mut)}
+.auth .sep::before,.auth .sep::after{content:"";flex:1;height:1px;background:var(--line)}
+.link{background:none;border:0;padding:6px 0;font-size:14px;font-weight:650;text-decoration:underline;text-underline-offset:3px}
+.auth .link{margin-top:10px}
+.wcard{display:flex;flex-direction:column;align-items:flex-start;gap:2px}
+.down{display:block;font-size:14px;font-weight:700;color:var(--green)}
+.up{display:block;font-size:14px;font-weight:650;color:var(--red)}
+.same{display:block;font-size:14px;color:var(--mut)}
+.wcard .save{display:none}
+
+/* Pied de page */
+.foot{margin-top:72px;padding:26px 0 44px;border-top:1px solid var(--line);font-size:14px;color:var(--mut)}
+.foot p{max-width:72ch;margin:0}
+.inst{margin-top:16px}
+.inst[hidden],.inst-ios[hidden]{display:none}
+.inst-ios{max-width:46ch;margin:12px 0 0}
+
+/* Très petits écrans : la recherche passe sur sa propre ligne, sous le logo et les icônes */
+@media (max-width:359px){.bar{flex-wrap:wrap}.fav{margin-left:auto}#sf{order:5;flex:1 0 100%}}
+/* Téléphone : les rayons de l'accueil défilent sur le côté (la carte suivante dépasse, ce qui montre qu'on peut glisser) */
+@media (max-width:720px){
+  .grid.rail{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x proximity;scroll-padding-left:16px;margin:0 -16px;padding:0 16px 4px;scrollbar-width:none}
+  .grid.rail::-webkit-scrollbar{display:none}
+  .grid.rail > .card{flex:0 0 min(44vw,180px);scroll-snap-align:start}
+  h2.first{margin-top:28px}
+}
+
+/* Tablette et ordinateur (le téléphone est la base ci-dessus) */
+@media (min-width:721px){
+  .bar{flex-wrap:wrap;gap:12px 22px;padding:12px 0 8px}
+  .logo span,.acct span,#sf .go-t{position:static;width:auto;height:auto;overflow:visible;clip-path:none}
+  .acct{padding:9px 12px}
+  .fav{margin-left:auto}
+  #sf{min-width:260px;max-width:620px}
+  #q{padding:11px 14px}
+  #sf .cam{width:46px}
+  #sf .go{padding:0 20px}
+  #sf .go-i{display:none}
+  nav a{padding:9px 0 10px}
+  .hero{grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);padding:44px 0 52px}
+  .hero h1{font-size:clamp(36px,5.4vw,62px)}
+  .hero p{font-size:18px}
+  .ticket{padding:20px 22px 34px}
+  .grid{grid-template-columns:repeat(auto-fill,minmax(178px,1fr));gap:30px 20px}
+  .sk-grid{grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:30px 20px}
+  .card h3{font-size:15px}
+  .price{font-size:21px}
+  .save{font-stretch:100%}
+  .tools{display:flex;flex-wrap:wrap;gap:10px 18px}
+  .tools label{display:flex}
+  .tools select{width:auto}
+  .tools .count{grid-column:auto;margin-left:auto}
+  .top{grid-template-columns:minmax(0,340px) minmax(0,1fr);gap:24px 40px;margin-top:32px}
+  .top .img{border-radius:var(--r-l);grid-row:auto}
+  .top .info{display:block}
+  .top .fol{margin-top:18px}
+  .top .bestbox{margin-top:0}
+  .card .img{aspect-ratio:1}
+  .offer .oos{grid-column:auto}
+  .pname{font-size:clamp(22px,2.6vw,30px);margin-bottom:20px}
+  .bestbox .price{font-size:36px}
+  .bestbox .btn{display:inline-flex;width:auto}
+  .offers{padding:4px 24px 30px}
+  .offer{grid-template-columns:auto minmax(28px,1fr) auto auto;gap:8px 18px}
+  .offer .leader{display:block}
+  .offer .btn{grid-column:auto}
+}
+@media (min-width:1024px){.grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:36px 24px}}
+@media (prefers-reduced-motion:no-preference){
+  .tk-rows li{animation:tk .45s cubic-bezier(.2,.7,.2,1) both;animation-delay:calc(.2s + var(--i,0) * .14s)}
+  @keyframes tk{from{opacity:0;transform:translateY(-8px)}}
+}
+.tgt{margin:10px 0 4px;display:grid;gap:6px}
+.tgt label{font-size:.85rem;font-weight:600}
+.tgt-row{display:flex;gap:8px;flex-wrap:wrap}
+.tgt-row input{flex:1 1 120px;min-width:0;min-height:44px;padding:8px 10px;border:1px solid var(--field);border-radius:8px;background:var(--card);color:var(--ink,#111);font:inherit}
+.tgt-msg{font-size:.85rem}
+
+/* Suggestions pendant la frappe */
+.sg{position:fixed;z-index:20;max-height:min(70vh,440px);overflow-y:auto;background:var(--card);border-radius:var(--r-m);
+  box-shadow:0 0 0 1px var(--line),0 14px 30px var(--tk-shadow)}
+.sg-i{display:flex;align-items:center;gap:12px;padding:8px 12px;min-height:56px}
+.sg-i[aria-selected="true"],.sg-i:hover{background:var(--well)}
+.sg-i .th{flex:none;width:40px;height:40px;border-radius:var(--r-s);background:var(--tile);color:var(--on-tile);display:grid;place-items:center;overflow:hidden}
+.sg-i .th img{width:84%;height:84%;object-fit:contain;mix-blend-mode:multiply}
+.sg-i .th svg{width:22px;height:22px}
+.sg-i .tx{min-width:0;flex:1}
+.sg-i b{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;font-weight:600;font-size:14px;line-height:1.3}
+.sg-i .sub{margin-top:2px}
+.sg-i .pr{margin-right:6px;font-weight:800;font-stretch:108%;font-size:14px;color:var(--ink);white-space:nowrap;font-variant-numeric:tabular-nums}
+.sg-all{display:block;padding:12px;border-top:1px solid var(--line);font-size:14px;font-weight:650}
+.sg-all[aria-selected="true"],.sg-all:hover{background:var(--well)}
+
+/* Filtres de liste : prix maximum, promotions, affichage grille ou liste */
+.tools label.chk{display:flex;grid-column:1/-1;align-items:center;gap:10px;min-height:44px;color:var(--ink);cursor:pointer}
+.tools label.chk input{width:20px;height:20px;accent-color:var(--green);cursor:pointer}
+.tools input[type=number]{width:100%;max-width:150px;min-height:44px;padding:7px 11px;border:1.5px solid var(--field);border-radius:var(--r-m);background:var(--card);font-size:14px}
+.seg{display:inline-flex;grid-column:1;justify-self:start;border:1.5px solid var(--field);border-radius:var(--r-m);overflow:hidden}
+.seg button{display:grid;place-items:center;width:48px;height:44px;padding:0;background:var(--card);border:0}
+.seg button+button{border-left:1.5px solid var(--field)}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.grid.as-list{grid-template-columns:minmax(0,1fr);gap:14px;max-width:860px}
+.grid .grp{grid-column:1/-1;margin:6px 0 -6px;font-size:18px;font-weight:700}
+.grid .grp:first-child{margin-top:0}
+.grid .grp span{color:var(--mut);font-weight:500;font-size:15px}
+.as-list .card{display:grid;grid-template-columns:92px minmax(0,1fr);column-gap:14px;align-items:start}
+.as-list .card .img{grid-column:1;grid-row:1/span 3;margin:0;aspect-ratio:1;border-radius:var(--r-m)}
+.as-list .card .pl{grid-column:2;grid-row:1}
+.as-list .card h3{grid-column:2;grid-row:2}
+.as-list .card .meta{grid-column:2;grid-row:3}
+.nores .link{margin-left:6px}
+.tools .count{grid-column:2;margin-left:auto}
+.adv{grid-column:1/-1}
+.adv>summary{display:flex;align-items:center;gap:8px;width:max-content;min-height:44px;padding:6px 0;font-size:14px;font-weight:650;cursor:pointer;list-style:none}
+.adv>summary::-webkit-details-marker{display:none}
+.adv>summary::after{content:"";width:12px;height:8px;background:var(--chev) no-repeat center}
+.adv[open]>summary::after{transform:rotate(180deg)}
+.adv-in{display:grid;grid-template-columns:auto minmax(0,1fr);gap:10px 12px;align-items:center;padding:6px 0 4px}
+
+/* Vus récemment */
+.recent{display:flex;gap:14px;overflow-x:auto;padding-bottom:8px;scroll-snap-type:x proximity}
+.recent a{flex:none;width:148px;scroll-snap-align:start}
+.recent .img{aspect-ratio:1;border-radius:var(--r-m);margin-bottom:8px}
+.recent b{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;font-size:13px;font-weight:500;line-height:1.3}
+.recent a:hover b{text-decoration:underline;text-underline-offset:3px}
+
+/* Barre d'achat collante (téléphone) et retour en haut */
+.buybar{position:fixed;left:0;right:0;bottom:0;z-index:6;display:flex;align-items:center;gap:12px;
+  padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:var(--paper);border-top:2px solid var(--ink);transform:translateY(110%)}
+.buybar.on{transform:none}
+.buybar .price{font-size:20px}
+.buybar .sub{margin-top:0}
+.buybar .btn{margin-left:auto}
+.totop{position:fixed;right:14px;bottom:20px;z-index:6;display:grid;place-items:center;width:44px;height:44px;padding:0;border:2px solid var(--ink);border-radius:50%;
+  background:var(--card);opacity:0;pointer-events:none}
+.totop.on{opacity:1;pointer-events:auto}
+.has-buybar .totop{bottom:88px}
+.has-buybar .foot{margin-bottom:76px}
+header.away{transform:translateY(-100%)}
+@media (min-width:721px){
+  .buybar{display:none}
+  .totop{right:24px;bottom:24px}
+  .has-buybar .totop{bottom:24px}
+  .has-buybar .foot{margin-bottom:0}
+  header.away{transform:none}
+  .tools label.chk,.seg{grid-column:auto}
+  .adv{grid-column:auto}
+  .adv>summary{display:none}
+  .adv-in{display:flex;flex-wrap:wrap;gap:10px 18px;padding:0}
+  .tools input[type=number]{width:120px}
+  .seg{justify-self:auto}
+}
+@media (prefers-reduced-motion:no-preference){
+  header{transition:transform .22s ease}
+  .buybar{transition:transform .22s ease}
+  .totop{transition:opacity .2s}
+  .card .img img{transition:transform .35s cubic-bezier(.2,.7,.2,1)}
+  .card:hover .img img{transform:scale(1.04)}
+}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <div class="bar">
+    <a class="logo" href="#/" aria-label="Ivoire Prix, accueil"><i><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1E2320" stroke-width="2.4" stroke-linejoin="round" aria-hidden="true"><path d="M3 12V4h8l10 10-8 8L3 12z"/><circle cx="7.5" cy="8.5" r="1.4" fill="#1E2320"/></svg></i><span>Ivoire Prix</span></a>
+    <form id="sf" role="search"><input id="q" type="search" placeholder="Chercher" aria-label="Rechercher un produit"><button type="button" class="cam" id="cam" title="Rechercher avec une photo" aria-label="Rechercher avec une photo"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg></button><input id="photo" type="file" accept="image/*" hidden><button class="go"><span class="go-t">Comparer</span><svg class="ic go-i" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg></button></form>
+    <a class="acct fav" id="fav" href="#/favoris"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5s-8-4.7-8-10.6A4.4 4.4 0 0 1 12 7a4.4 4.4 0 0 1 8 2.9c0 5.9-8 10.6-8 10.6z"/></svg><span>Favoris</span></a>
+    <a class="acct" id="acct" href="#/compte"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg><span>Connexion</span></a>
+  </div>
+  <nav id="nav" aria-label="Catégories"></nav>
+</div></header>
+<main class="wrap" id="app" tabindex="-1"><div class="skel" aria-busy="true"><span class="sr">Chargement…</span><div class="sk-t"></div><div class="sk-grid"><i></i><i></i><i></i><i></i><i></i><i></i></div></div></main>
+<footer class="foot"><div class="wrap"><p>Ivoire Prix relève chaque jour les prix affichés par les boutiques en ligne de Côte d'Ivoire. Le prix final, la livraison et la disponibilité se confirment sur le site de la boutique.</p>
+  <div class="inst" id="inst" hidden>
+    <button type="button" class="btn" id="inst-btn">Installer l'application</button>
+    <p class="inst-ios" id="inst-ios" role="status" hidden>Sur iPhone et iPad : touchez le bouton Partager de Safari, puis « Sur l'écran d'accueil ».</p>
+  </div></div></footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js" integrity="sha384-0w2KAL2YHP6wKOkUDzkCDGgVvfmHnj02DHeQ6XcHOgTfFsGyonKOpShMH1x6nk9o" crossorigin="anonymous"></script>
+<script>
+// ====== À REMPLIR : Supabase > Project Settings > API ======
+const SUPABASE_URL = 'https://zhmdvtmziqdjxxxpilbh.supabase.co';
+const SUPABASE_KEY = 'sb_publishable_39t5LLbPbc6n8686NqBvfw_PFzsDLBM';   // clé publique uniquement, jamais la service_role
+// ===========================================================
+
+const app = document.getElementById('app');
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+// titrePropre:debut (copie identique dans worker/index.mjs ; un test vérifie qu'elles restent semblables)
+// Titre affiché : retire la durée de garantie que les boutiques collent au nom (« Garantie 24 Mois »,
+// « 12 Mois De Garantie »). La base garde le titre d'origine. On n'enlève rien d'autre : « Silencieux »
+// ou « 6 mois » (âge d'un produit bébé) font partie du produit.
+function titrePropre(nom) {
+  const brut = String(nom ?? '').replace(/\s+/g, ' ').trim();
+  const propre = brut
+    .replace(/\s*[-–—,|]?\s*\(?\s*garantie\s*:?\s*\d+\s*(?:mois|ans?)\b\.?\)?/gi, '')
+    .replace(/\s*[-–—,|]?\s*\(?\s*\d+\s*(?:mois|ans?)\s+(?:de\s+)?garantie\b\.?\)?/gi, '')
+    .replace(/^[\s\-–—,|]+|[\s\-–—,|.]+$/g, '')
+    .replace(/\s{2,}/g, ' ');
+  return propre.length >= 3 ? propre : brut;
+}
+// titrePropre:fin
+const fcfa = n => Number(n).toLocaleString('fr-FR') + ' FCFA';
+const safe = u => /^https?:\/\//i.test(u) ? u : '#';
+const kinds = {platform:'Place de marché', partner:'Boutique en ligne', individual:'Vendeur particulier'};
+let db, cats = [];
+
+// Icônes (dessins vectoriels, mêmes traits partout ; pas d'émoji)
+const ICON_BOX = '<svg class="ic" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 8 12 3 3 8v8l9 5 9-5z"/><path d="m3 8 9 5 9-5M12 13v8"/></svg>';
+const ICON_HEART = '<svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7.5-4.6-9.3-9.2C1.5 7.6 3.6 4.5 6.9 4.5c2 0 3.6 1.1 5.1 3 1.5-1.9 3.1-3 5.1-3 3.3 0 5.4 3.1 4.2 6.3C19.5 15.4 12 20 12 20z"/></svg>';
+const ICON_HEART_ON = ICON_HEART.replace('fill="none"', 'fill="currentColor"');
+const ICON_GRID = '<svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.5"/></svg>';
+const ICON_LIST = '<svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>';
+const ICON_SHARE = '<svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V3M7 8l5-5 5 5M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg>';
+const ICON_UP = '<svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>';
+const noImg = () => `<span aria-hidden="true">${ICON_BOX}</span>`;
+
+// Prix en gros caractères : le nombre, puis « FCFA » plus petit
+const priceHtml = n => `<span class="price">${Number(n).toLocaleString('fr-FR')}<small>FCFA</small></span>`;
+const longDate = d => new Date(d).toLocaleDateString('fr-FR', {day: 'numeric', month: 'long'});
+
+// Ce qu'on peut vraiment acheter aujourd'hui : l'offre la moins chère de chaque boutique EN STOCK.
+// Les cartes, l'écart, la promo et les tris s'appuient tous dessus, comme la fiche produit.
+function liveInfo(p) {
+  if (!offerCache.has(p.product_id)) return {shops: Number(p.offers_count) || 0, min: Number(p.min_price), gap: 0, offer: null};
+  const per = new Map();
+  for (const o of offerCache.get(p.product_id)) {
+    if (o.in_stock === false) continue;
+    const k = String(o.shop_id), c = per.get(k);
+    if (!c || Number(o.price) < Number(c.price)) per.set(k, o);
+  }
+  const l = [...per.values()].sort((a, b) => a.price - b.price);
+  if (!l.length) return {shops: 0, min: null, gap: 0, offer: null};
+  return {shops: l.length, min: Number(l[0].price), gap: Number(l[l.length - 1].price) - Number(l[0].price), offer: l[0]};
+}
+
+const card = (p, disc = {}) => {
+  const L = liveInfo(p), d = disc[p.product_id];
+  const pct = d ? Math.round((d.original_price - d.price) / d.original_price * 100) : 0;
+  const many = L.shops > 1, out = L.shops === 0;
+  let where = many ? `${L.shops} boutiques` : '1 boutique';
+  if (L.shops === 1 && L.offer && shopsById && shopsById[String(L.offer.shop_id)]) where = 'chez ' + esc(shopsById[String(L.offer.shop_id)]);
+  if (out) where = 'En rupture de stock';
+  return `<a class="card${out ? ' out' : ''}" href="/p/${encodeURIComponent(p.slug)}">
+  <div class="img">${p.image_url ? `<img loading="lazy" decoding="async" src="${esc(p.image_url)}" alt="">` : noImg()}${pct > 0 ? `<span class="promo">-${pct} %</span>` : ''}</div>
+  <h3>${esc(titrePropre(p.name))}</h3>
+  <div class="pl">${many ? '<span class="from">à partir de</span>' : ''}${priceHtml(out ? p.min_price : L.min)}</div>
+  <div class="meta"><span class="cnt">${where}</span>${gapLine(p)}</div></a>`;
+};
+
+// Offres (par produit) et boutiques, gardées en mémoire pour ne pas redemander à chaque filtre
+const offerCache = new Map();
+let shopsById = null;
+
+async function loadOffers(products) {
+  const ids = [...new Set(products.map(p => p.product_id))].filter(id => !offerCache.has(id));
+  const parts = [];
+  for (let i = 0; i < ids.length; i += 100) parts.push(ids.slice(i, i + 100));   // par paquets, pour garder des requêtes courtes
+  for (let i = 0; i < parts.length; i += 6) {                                     // six paquets à la fois
+    await Promise.all(parts.slice(i, i + 6).map(async part => {
+      const {data, error} = await db.from('offers_live').select('product_id,shop_id,price,original_price,in_stock,last_seen_at').in('product_id', part);
+      if (error) throw error;   // sinon une panne passerait pour « en rupture de stock » au lieu d'afficher « Réessayer »
+      part.forEach(id => offerCache.set(id, []));
+      (data || []).forEach(o => offerCache.get(o.product_id).push(o));
+    }));
+  }
+}
+
+async function loadShops() {
+  if (shopsById) return shopsById;
+  const {data} = await db.from('shops').select('id,name');
+  shopsById = Object.fromEntries((data || []).map(s => [String(s.id), s.name]));
+  return shopsById;
+}
+
+// Écart entre la boutique la moins chère et la plus chère (seulement si 2 boutiques ou plus)
+function gapLine(p) {
+  const L = liveInfo(p);
+  return L.shops > 1 && L.gap > 0 ? `<span class="save">${fcfa(L.gap)} d'écart</span>` : '';
+}
+
+async function bestDiscount(products) {
+  // Pour chaque produit affiché : la réduction de l'offre dont on affiche le prix (la moins chère en stock),
+  // jamais celle d'une autre boutique
+  await loadOffers(products);
+  const best = {};
+  for (const p of products) {
+    const o = liveInfo(p).offer;
+    if (o && o.original_price && Number(o.original_price) > Number(o.price)) best[p.product_id] = o;
+  }
+  return best;
+}
+
+const PAGE = 48;
+
+// Liste de produits avec tri, filtres (boutique, produits comparés) et bouton « Afficher plus »
+const list = async (title, rows, empty, opts = {}) => {
+  if (!rows.length) { app.innerHTML = `<h1 class="ptitle">${esc(title)}</h1><p class="mut">${empty}</p>`; return; }
+  const [disc, shops] = await Promise.all([bestDiscount(rows), loadShops()]);
+  const present = new Set();
+  rows.forEach(p => (offerCache.get(p.product_id) || []).forEach(o => { if (o.in_stock !== false) present.add(String(o.shop_id)); }));
+  const shopOpts = [...present].filter(id => shops[id]).sort((a, b) => shops[a].localeCompare(shops[b]))
+    .map(id => `<option value="${esc(id)}">${esc(shops[id])}</option>`).join('');
+  const hasCmp = rows.some(p => liveInfo(p).shops > 1);
+  app.innerHTML = `<h1 class="ptitle">${esc(title)}</h1>
+    <div class="tools">
+      <label>Trier par <select id="f-sort">
+        <option value="">Pertinence</option><option value="asc">Prix croissant</option>
+        <option value="desc">Prix décroissant</option><option value="promo">Plus grosse promotion</option></select></label>
+      ${Object.keys(disc).length ? '<label class="chk"><input type="checkbox" id="f-promo"> En promotion</label>' : ''}
+      <details class="adv" id="f-adv"><summary id="f-adv-sum">Plus de filtres</summary><div class="adv-in">
+        ${present.size > 1 ? `<label>Boutique <select id="f-shop"><option value="">Toutes</option>${shopOpts}</select></label>` : ''}
+        ${hasCmp ? `<label>Afficher <select id="f-cmp"><option value="">Tous les produits</option><option value="1">Comparés entre boutiques</option></select></label>` : ''}
+        <label>Prix max <input id="f-max" type="number" inputmode="numeric" min="0" step="1000" placeholder="en FCFA"></label>
+      </div></details>
+      <span class="seg" role="group" aria-label="Mode d'affichage">
+        <button type="button" id="v-grid" aria-label="Affichage en grille" title="Grille" aria-pressed="true">${ICON_GRID}</button>
+        <button type="button" id="v-list" aria-label="Affichage en liste" title="Liste" aria-pressed="false">${ICON_LIST}</button></span>
+      <span class="mut count" id="f-count" aria-live="polite"></span>
+    </div>
+    <div class="grid" id="f-grid"></div>
+    <button type="button" class="more" id="f-more" hidden>Afficher plus de produits</button>`;
+  let savedView = 'grid';
+  try { savedView = localStorage.getItem('ip_view') === 'list' ? 'list' : 'grid'; } catch {}
+  const st = {sort: '', shop: '', cmp: '', max: 0, promo: false, view: savedView, shown: PAGE};
+  const pct = p => { const d = disc[p.product_id]; return d ? (d.original_price - d.price) / d.original_price : 0; };
+  const more = document.getElementById('f-more');
+  // Sur ordinateur les filtres sont toujours visibles ; sur téléphone ils se déplient à la demande
+  if (window.matchMedia('(min-width:721px)').matches) document.getElementById('f-adv').open = true;
+  const view = () => {
+    let r = rows.filter(p =>
+      (!st.shop || (offerCache.get(p.product_id) || []).some(o => String(o.shop_id) === st.shop && o.in_stock !== false)) &&
+      (!st.cmp || liveInfo(p).shops > 1) &&
+      (!st.promo || disc[p.product_id]) &&
+      (!st.max || (liveInfo(p).min != null && liveInfo(p).min <= st.max)));
+    const lp = p => { const m = liveInfo(p).min; return m == null ? null : m; };   // épuisés partout : en fin de liste
+    if (st.sort === 'asc') r = [...r].sort((a, b) => (lp(a) ?? Infinity) - (lp(b) ?? Infinity));
+    if (st.sort === 'desc') r = [...r].sort((a, b) => (lp(b) ?? -Infinity) - (lp(a) ?? -Infinity));
+    if (st.sort === 'promo') r = [...r].sort((a, b) => pct(b) - pct(a));
+    if (!opts.groupCompared) r = r.map((p, i) => [p, i]).sort((x, y) => (liveInfo(x[0]).shops === 0) - (liveInfo(y[0]).shops === 0) || x[1] - y[1]).map(x => x[0]);   // épuisés partout : en fin de liste
+    // Dans une catégorie : d'abord les produits comparés entre plusieurs boutiques, puis ceux d'une seule
+    // boutique, puis ceux épuisés partout. Le tri choisi s'applique à l'intérieur de chaque groupe.
+    const grp = p => { const n = liveInfo(p).shops; return n > 1 ? 0 : n === 1 ? 1 : 2; };
+    const GRP_TITRES = ['Comparés entre boutiques', 'Chez une seule boutique', 'Indisponibles pour le moment'];
+    const counts = [0, 0, 0];
+    if (opts.groupCompared) { r = r.map((p, i) => [p, i]).sort((x, y) => grp(x[0]) - grp(y[0]) || x[1] - y[1]).map(x => x[0]); r.forEach(p => counts[grp(p)]++); }
+    const titled = opts.groupCompared && counts.filter(Boolean).length > 1;
+    const grid = document.getElementById('f-grid');
+    grid.classList.toggle('as-list', st.view === 'list');
+    document.getElementById('v-grid').setAttribute('aria-pressed', String(st.view !== 'list'));
+    document.getElementById('v-list').setAttribute('aria-pressed', String(st.view === 'list'));
+    let lastGrp = -1;
+    grid.innerHTML = r.slice(0, st.shown).map(p => {
+      const g = grp(p), head = titled && g !== lastGrp ? `<h2 class="grp">${GRP_TITRES[g]} <span>(${counts[g]})</span></h2>` : '';
+      lastGrp = g;
+      return head + card(p, disc);
+    }).join('') ||
+      '<p class="mut nores">Aucun produit avec ces filtres.<button type="button" class="link" id="f-reset">Réinitialiser les filtres</button></p>';
+    const reset = document.getElementById('f-reset');
+    if (reset) reset.addEventListener('click', () => {
+      Object.assign(st, {sort: '', shop: '', cmp: '', max: 0, promo: false, shown: PAGE});
+      ['f-sort', 'f-shop', 'f-cmp', 'f-max'].forEach(id => { const el = document.getElementById(id); if (el) el.value = ''; });
+      const pr = document.getElementById('f-promo'); if (pr) pr.checked = false;
+      view();
+    });
+    document.getElementById('f-count').textContent = `${r.length} produit${r.length > 1 ? 's' : ''}`;
+    const active = [st.shop, st.cmp, st.max].filter(Boolean).length;       // « En promotion » reste visible : on ne la compte pas
+    document.getElementById('f-adv-sum').textContent = active ? `Plus de filtres (${active} actif${active > 1 ? 's' : ''})` : 'Plus de filtres';
+    more.hidden = r.length <= st.shown;
+    loadIfNear();
+  };
+  // Chargement progressif : la suite de la liste arrive quand on approche du bas (le bouton reste en secours)
+  const loadIfNear = () => requestAnimationFrame(() => {
+    if (!more.isConnected || more.hidden) return;
+    if (more.getBoundingClientRect().top < window.innerHeight + 300) { st.shown += PAGE; view(); }
+  });
+  let ticking = false;
+  const onScroll = () => {
+    if (!more.isConnected) return window.removeEventListener('scroll', onScroll);
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(() => { ticking = false; loadIfNear(); });
+  };
+  window.addEventListener('scroll', onScroll, {passive: true});
+  const bind = (id, key) => { const el = document.getElementById(id);
+    if (el) el.addEventListener('change', () => { st[key] = el.value; st.shown = PAGE; view(); }); };
+  bind('f-sort', 'sort'); bind('f-shop', 'shop'); bind('f-cmp', 'cmp');
+  const promo = document.getElementById('f-promo');
+  if (promo) promo.addEventListener('change', () => { st.promo = promo.checked; st.shown = PAGE; view(); });
+  const maxEl = document.getElementById('f-max');
+  let maxTimer;
+  maxEl.addEventListener('input', () => {             // le filtre suit la frappe, sans recalculer à chaque touche
+    clearTimeout(maxTimer);
+    maxTimer = setTimeout(() => { st.max = Math.max(0, Number(maxEl.value) || 0); st.shown = PAGE; view(); }, 250);
+  });
+  [['v-grid', 'grid'], ['v-list', 'list']].forEach(([id, v]) => document.getElementById(id).addEventListener('click', () => {
+    st.view = v;
+    try { localStorage.setItem('ip_view', v); } catch {}
+    view();
+  }));
+  more.addEventListener('click', () => { st.shown += PAGE; view(); });
+  view();
+};
+
+// Accueil : un vrai produit du jour, ses prix boutique par boutique comme sur un ticket de caisse.
+// On prend celui qui est en stock dans le plus de boutiques, avec le plus grand écart de prix.
+function heroTicket(products, shops) {
+  let pick = null;
+  for (const p of products) {
+    const cheapest = new Map();           // une ligne par boutique : son offre la moins chère
+    for (const o of offerCache.get(p.product_id) || []) {
+      if (o.in_stock === false) continue;
+      const k = String(o.shop_id), cur = cheapest.get(k);
+      if (!cur || Number(o.price) < Number(cur.price)) cheapest.set(k, o);
+    }
+    if (cheapest.size < 2) continue;
+    const rows = [...cheapest.values()].sort((a, b) => a.price - b.price);
+    const lo = Number(rows[0].price), hi = Number(rows[rows.length - 1].price);
+    const ratio = (hi - lo) / lo;
+    // d'abord le produit vendu dans le plus de boutiques, puis le plus grand écart
+    if (!pick || rows.length > pick.rows.length || (rows.length === pick.rows.length && ratio > pick.ratio)) pick = {p, rows, lo, hi, ratio};
+  }
+  if (!pick || pick.hi <= pick.lo) return '';
+  const {p, rows, lo, hi} = pick;
+  const href = '/p/' + encodeURIComponent(p.slug);
+  const seen = rows.map(o => o.last_seen_at).filter(Boolean).sort().pop();
+  return `<div class="tk-wrap"><div class="ticket">
+    <a class="tk-prod" href="${href}"><span class="tk-img">${p.image_url ? `<img src="${esc(p.image_url)}" alt="">` : noImg()}</span>
+      <span><b>${esc(titrePropre(p.name))}</b>${seen ? `<span class="tk-date">Prix relevés le ${longDate(seen)}</span>` : ''}</span></a>
+    <ol class="tk-rows">${rows.map((o, i) => `<li${i === 0 ? ' class="best"' : ''} style="--i:${i}">
+      <span>${esc(shops[String(o.shop_id)] || 'Boutique')}</span><span class="leader" aria-hidden="true"></span>${priceHtml(o.price)}</li>`).join('')}</ol>
+    <p class="tk-gap"><span>Économie possible</span>${priceHtml(hi - lo)}</p>
+    <a class="tk-link" href="${href}">Voir le détail des offres</a>
+  </div></div>`;
+}
+
+// Le chiffre « Économie possible » défile jusqu'à sa valeur (sauf si le visiteur a demandé moins d'animations)
+function countUp(el) {
+  const n = el.firstChild;
+  if (!n || n.nodeType !== 3) return;
+  const target = Number(n.nodeValue.replace(/\D/g, ''));
+  if (!target || window.matchMedia('(prefers-reduced-motion:reduce)').matches) return;
+  const t0 = performance.now(), dur = 900;
+  const step = now => {
+    const k = Math.min(1, (now - t0) / dur);
+    n.nodeValue = Math.round(target * (1 - Math.pow(1 - k, 3))).toLocaleString('fr-FR');
+    if (k < 1) requestAnimationFrame(step);
+  };
+  requestAnimationFrame(step);
+}
+
+// Produits consultés (gardés dans le navigateur du visiteur, sans prix : un prix gardé deviendrait faux)
+const recent = {
+  get() { try { return JSON.parse(localStorage.getItem('ip_recent') || '[]').filter(r => r && r.slug); } catch { return []; } },
+  add(p) {
+    try {
+      const l = this.get().filter(r => r.slug !== p.slug);
+      l.unshift({slug: p.slug, name: p.name, img: p.image_url || ''});
+      localStorage.setItem('ip_recent', JSON.stringify(l.slice(0, 8)));
+    } catch {}
+  },
+};
+const recentHtml = () => {
+  const l = recent.get();
+  if (!l.length) return '';
+  return `<h2>Vus récemment</h2><div class="recent">${l.map(r => `<a href="/p/${encodeURIComponent(r.slug)}">
+    <div class="img">${r.img ? `<img loading="lazy" decoding="async" src="${esc(r.img)}" alt="">` : noImg()}</div><b>${esc(titrePropre(r.name))}</b></a>`).join('')}</div>`;
+};
+
+// Les plus fortes réductions du moment : l'offre en stock dont le prix barré est le plus éloigné du prix affiché
+async function dealsHtml(skip) {
+  try {
+    const {data} = await db.from('offers_live').select('product_id,price,original_price')
+      .eq('in_stock', true).not('original_price', 'is', null).limit(500);
+    const best = new Map();
+    for (const o of data || []) {
+      const price = Number(o.price), orig = Number(o.original_price);
+      if (!(price > 0) || !(orig > price)) continue;
+      const pct = (orig - price) / orig;
+      if (pct < 0.05 || pct > 0.7) continue;           // en dessous, ce n'est pas une affaire ; au-dessus, le prix barré est douteux
+      if (!best.has(o.product_id) || pct > best.get(o.product_id)) best.set(o.product_id, pct);
+    }
+    const ids = [...best.entries()].sort((a, b) => b[1] - a[1]).map(e => e[0]).filter(id => !skip.has(id)).slice(0, 8);
+    if (!ids.length) return '';
+    const {data: prods} = await db.from('product_prices').select('*').in('product_id', ids);
+    if (!prods || !prods.length) return '';
+    const rank = new Map(ids.map((id, i) => [id, i]));
+    prods.sort((a, b) => rank.get(a.product_id) - rank.get(b.product_id));
+    const disc = await bestDiscount(prods);
+    return `<h2>Bonnes affaires du moment</h2><div class="grid rail">${prods.map(p => card(p, disc)).join('')}</div>`;
+  } catch { return ''; }         // section facultative : en cas d'erreur, on ne l'affiche pas
+}
+
+async function home() {
+  const cmp = await db.from('product_prices').select('*').gt('offers_count', 1).order('offers_count', {ascending: false}).limit(12);
+  if (cmp.error) throw cmp.error;
+  const all = cmp.data;
+  const dealsReq = dealsHtml(new Set(all.map(p => p.product_id)));    // en même temps que le reste de la page
+  const [disc, shops] = await Promise.all([bestDiscount(all), loadShops()]);
+  const names = Object.values(shops);
+  let shopText = "les boutiques en ligne de Côte d'Ivoire";
+  if (names.length) try { shopText = new Intl.ListFormat('fr', {type: 'conjunction'}).format(names); } catch { shopText = names.join(', '); }
+  app.innerHTML = `<section class="hero"><div>
+      <h1>Le même produit, pas le même prix.</h1>
+      <p>Chaque jour, Ivoire Prix relève les prix de ${esc(shopText)}. Cherchez un produit et achetez là où il coûte le moins.</p>
+    </div>${heroTicket(cmp.data, shops)}</section>`;
+  app.querySelectorAll('.tk-gap .price').forEach(countUp);
+  if (!all.length) {
+    app.insertAdjacentHTML('beforeend', `<p class="mut">Aucun produit pour le moment. Ajoutez des offres dans la base pour les voir ici.</p>`);
+    return;
+  }
+  if (cats.length) app.insertAdjacentHTML('beforeend', `<h2 class="first">Parcourir par catégorie</h2>
+    <div class="chips">${cats.map(c => `<a href="/c/${encodeURIComponent(c.slug)}">${esc(c.name)}</a>`).join('')}</div>`);
+  const shown = cmp.data.filter(p => liveInfo(p).shops > 1);          // vraiment comparables aujourd'hui
+  if (shown.length) app.insertAdjacentHTML('beforeend',
+    `<h2>Comparés entre boutiques</h2><div class="grid rail">${shown.map(p => card(p, disc)).join('')}</div>`);
+  const deals = await dealsReq;
+  if (!app.querySelector('.hero')) return;                 // le visiteur a changé de page pendant ce temps
+  if (deals) app.insertAdjacentHTML('beforeend', deals);
+  const seen = recentHtml();
+  if (seen) app.insertAdjacentHTML('beforeend', seen);
+}
+
+async function search(q) {
+  document.getElementById('q').value = q;
+  const {data, error} = await db.rpc('search_products', {q});
+  if (error) throw error;
+  await list(`Résultats pour « ${q} »`, data, 'Aucun produit trouvé. Essayez un autre mot (marque ou modèle).');
+  if (!data.length && cats.length) app.insertAdjacentHTML('beforeend', `<p class="mut" style="margin-top:20px">Ou parcourez une catégorie :</p>
+    <div class="chips">${cats.map(c => `<a href="/c/${encodeURIComponent(c.slug)}">${esc(c.name)}</a>`).join('')}</div>`);
+}
+
+// L'API rend au plus 1 000 lignes par requête : on lit les grandes listes page par page
+async function fetchAll(build, size = 1000) {
+  const rows = [];
+  for (let from = 0; ; from += size) {
+    const {data, error} = await build().range(from, from + size - 1);
+    if (error) throw error;
+    rows.push(...data);
+    if (data.length < size) return rows;
+  }
+}
+
+async function category(slug) {
+  const c = cats.find(x => x.slug === slug);
+  if (!c) return app.innerHTML = '<p>Catégorie introuvable.</p>';
+  document.title = `${c.name} : comparer les prix en Côte d'Ivoire | Ivoire Prix`;
+  const data = await fetchAll(() => db.from('product_prices').select('*').eq('category_id', c.id).order('min_price').order('product_id'));
+  await list(c.name, data, 'Aucun produit dans cette catégorie pour le moment.', {groupCompared: true});
+}
+
+async function product(slug) {
+  const {data:p, error} = await db.from('products').select('*').eq('slug', slug).maybeSingle();
+  if (error) throw error;
+  if (!p) return app.innerHTML = '<p>Produit introuvable.</p>';
+  const nomP = titrePropre(p.name);
+  document.title = `${nomP.length > 62 ? nomP.slice(0, 61) + '…' : nomP} : prix en Côte d'Ivoire | Ivoire Prix`;
+  const {data:offers, error:e2} = await db.from('offers_live').select('*').eq('product_id', p.id).order('price');
+  if (e2) throw e2;
+  const ids = [...new Set(offers.map(o => o.shop_id))];
+  const {data:shops} = ids.length ? await db.from('shops').select('id,name,type').in('id', ids) : {data:[]};
+  const sm = Object.fromEntries((shops || []).map(s => [s.id, s]));
+  const live = offers.filter(o => o.in_stock);       // offres déjà triées du moins cher au plus cher
+  const best = live[0];
+  const liveShops = new Set(live.map(o => o.shop_id));
+  const gain = liveShops.size > 1 ? Number(live[live.length - 1].price) - Number(best.price) : 0;
+  const bestName = best ? (sm[best.shop_id] || {}).name || 'la boutique' : '';
+  const ordered = [...live, ...offers.filter(o => !o.in_stock)];   // en stock d'abord, ruptures en bas
+  const rows = ordered.map(o => {
+    const s = sm[o.shop_id] || {};
+    const ship = o.shipping_cost == null ? '' : (Number(o.shipping_cost) === 0 ? 'Livraison offerte' : `+ ${fcfa(o.shipping_cost)} de livraison`);
+    const hasDiscount = o.original_price && Number(o.original_price) > Number(o.price);
+    const pct = hasDiscount ? Math.round((o.original_price - o.price) / o.original_price * 100) : 0;
+    const isBest = o === best;
+    const about = [kinds[s.type], o.in_stock ? 'en stock' : 'rupture de stock'].filter(Boolean).join(', ');
+    return `<li class="offer${isBest ? ' best' : ''}${o.in_stock ? '' : ' out'}">
+      <div class="shop"><strong>${esc(s.name || 'Boutique')}</strong>${isBest ? '<span class="tag">Prix le plus bas</span>' : ''}
+        <span class="sub">${esc(about.charAt(0).toUpperCase() + about.slice(1))}. Vérifié le ${longDate(o.last_seen_at)}</span></div>
+      <span class="leader" aria-hidden="true"></span>
+      <div class="amt">${hasDiscount ? `<span class="old-price">${fcfa(o.original_price)}</span><span class="discount">-${pct} %</span><br>` : ''}${priceHtml(o.price)}${o.in_stock && best && !isBest && Number(o.price) > Number(best.price) ? `<span class="sub">+ ${fcfa(Number(o.price) - Number(best.price))} de plus</span>` : ''}${ship ? `<span class="sub">${ship}</span>` : ''}</div>
+      ${o.in_stock ? `<a class="btn" href="${esc(safe(o.url))}" target="_blank" rel="noopener sponsored">Voir l'offre</a>` : '<span class="sub oos">Indisponible</span>'}</li>`;
+  }).join('');
+  app.innerHTML = `<div class="top"><div class="img">${p.image_url ? `<img src="${esc(p.image_url)}" alt="">` : noImg()}</div>
+    <div class="info"><p class="brand">${esc(p.brand || '')}</p><h1 class="pname">${esc(nomP)}</h1>
+    ${best ? `<div class="bestbox"><span class="lbl">Le moins cher aujourd'hui</span>${priceHtml(best.price)}
+      <div class="where">chez ${esc(bestName)}</div>
+      ${gain > 0 ? `<p class="gain">Jusqu'à ${fcfa(gain)} de moins qu'ailleurs</p>` : ''}
+      <a class="btn primary" href="${esc(safe(best.url))}" target="_blank" rel="noopener sponsored">Voir l'offre chez ${esc(bestName)}</a></div>` : ''}
+    ${p.description ? `<p class="desc">${esc(p.description)}</p>` : ''}
+    <p class="fol"><button type="button" class="follow" id="follow" aria-pressed="false" hidden>${ICON_HEART}<span>Suivre ce produit</span></button>
+    <button type="button" class="follow" id="share">${ICON_SHARE}<span>Partager</span></button>
+    <span class="mut" id="follow-msg" aria-live="polite"></span></p></div></div>
+    <h2>${live.length > 1 ? `${live.length} offres en stock, du moins cher au plus cher` : live.length ? '1 offre en stock' : 'Aucune offre en stock pour le moment'}</h2>
+    ${offers.length ? '<p class="mut rank">Classées selon le prix affiché par la boutique, livraison non comprise.</p>' : ''}` +
+    (rows ? `<div class="tk-wrap offers-wrap"><ol class="ticket offers">${rows}</ol></div>` : '<p class="mut">Aucune offre à jour pour ce produit.</p>');
+  setupFollow(p, (live[0] || offers[0] || {}).price ?? null);
+  setupShare(p, best);
+  setupBuybar(best, bestName);
+  recent.add(p);
+  showHistory(p);
+}
+
+// Partager la fiche : feuille de partage du téléphone, ou WhatsApp à défaut
+function setupShare(p, best) {
+  const b = document.getElementById('share');
+  if (!b) return;
+  b.addEventListener('click', async () => {
+    const nomP = titrePropre(p.name);
+    const text = best ? `${nomP} : à partir de ${fcfa(best.price)} sur Ivoire Prix` : `${nomP} sur Ivoire Prix`;
+    if (navigator.share) {
+      try { await navigator.share({title: nomP, text, url: location.href}); } catch { /* partage annulé */ }
+      return;
+    }
+    window.open('https://wa.me/?text=' + encodeURIComponent(text + '\n' + location.href), '_blank', 'noopener');
+  });
+}
+
+// Sur téléphone : le prix le plus bas et son bouton restent à l'écran quand on descend dans la fiche
+function setupBuybar(best, bestName) {
+  const box = document.querySelector('.bestbox');
+  if (!best || !box || !('IntersectionObserver' in window)) return;
+  document.body.insertAdjacentHTML('beforeend', `<div class="buybar" id="buybar" role="region" aria-label="Meilleure offre">
+    <div>${priceHtml(best.price)}<span class="sub">chez ${esc(bestName)}</span></div>
+    <a class="btn primary" href="${esc(safe(best.url))}" target="_blank" rel="noopener sponsored">Voir l'offre</a></div>`);
+  document.body.classList.add('has-buybar');
+  const bar = document.getElementById('buybar');
+  new IntersectionObserver(([e]) => bar.classList.toggle('on', !e.isIntersecting && e.boundingClientRect.top < 0)).observe(box);
+}
+
+// ====== Historique des prix ======
+// Chaque boutique garde toujours la même couleur (--s1 à --s10 dans le style) et son propre trait,
+// pour qu'on la reconnaisse aussi sans voir les couleurs.
+const DASH = ['', '7 4', '2 4', '10 4 2 4', '14 3', '1 3', '5 2 1 2', '9 3 1 3 1 3', '3 3', '12 2 2 2 2 2'];
+const hDate = d => new Date(d).toLocaleDateString('fr-FR', {day:'numeric', month:'short', year:'numeric'});
+const niceStep = raw => { const p = 10 ** Math.floor(Math.log10(raw)); return [1, 2, 2.5, 5, 10].map(m => m * p).find(v => v >= raw); };
+
+function drawHistory(el, rows, order) {
+  rows = (rows || []).filter(r => Number(r.price) > 0);
+  if (!rows.length) { el.innerHTML = '<p class="mut">Pas encore d\'historique pour ce produit.</p>'; return; }
+  const byShop = {};
+  rows.forEach(r => (byShop[r.shop_name] = byShop[r.shop_name] || []).push(r));
+  const slot = name => { const i = order.indexOf(name); return i >= 0 ? i % 10 : 3; };
+  const shops = Object.keys(byShop).sort((a, b) => slot(a) - slot(b));
+  if (rows.length <= shops.length) {
+    const first = rows.reduce((a, r) => (new Date(r.recorded_at) < new Date(a) ? r.recorded_at : a), rows[0].recorded_at);
+    el.innerHTML = `<p class="mut">Historique en cours de constitution : premier relevé le ${hDate(first)}. La courbe apparaîtra dès qu'un prix change.</p>`;
+    return;
+  }
+  shops.forEach(s => byShop[s].sort((a, b) => new Date(a.recorded_at) - new Date(b.recorded_at)));
+  const W = Math.round(Math.max(300, Math.min(760, el.clientWidth || 640))), H = W < 480 ? 220 : 260, L = 58, R = 90, T = 14, B = 30;
+  const t0 = Math.min(...rows.map(r => +new Date(r.recorded_at)));
+  const t1 = Math.max(Date.now(), ...rows.map(r => +new Date(r.recorded_at)));
+  const prices = rows.map(r => +r.price);
+  let lo = Math.min(...prices), hi = Math.max(...prices);
+  const step = niceStep(Math.max(hi - lo, hi * 0.02) / 3);
+  lo = Math.floor(lo / step) * step; hi = Math.ceil(hi / step) * step;
+  if (hi === lo) hi = lo + step;
+  const x = t => L + ((t - t0) / Math.max(1, t1 - t0)) * (W - L - R);
+  const y = v => T + (1 - (v - lo) / (hi - lo)) * (H - T - B);
+  const at = (s, t) => { let v = null; for (const r of byShop[s]) { if (+new Date(r.recorded_at) <= t) v = +r.price; } return v; };
+  let svg = `<svg viewBox="0 0 ${W} ${H}" width="100%" role="img" aria-label="Évolution du prix par boutique, du ${hDate(t0)} au ${hDate(t1)}">`;
+  for (let v = lo; v <= hi + step / 2; v += step) {
+    svg += `<line class="grid-line" x1="${L}" x2="${W - R}" y1="${y(v)}" y2="${y(v)}"/>` +
+           `<text x="${L - 8}" y="${y(v) + 4}" text-anchor="end" class="axis">${Math.round(v).toLocaleString('fr-FR')}</text>`;
+  }
+  const axDate = W < 400 ? d => new Date(d).toLocaleDateString('fr-FR', {day: 'numeric', month: 'short'}) : hDate;
+  svg += `<text x="${L}" y="${H - 8}" class="axis">${axDate(t0)}</text>` +
+         `<text x="${W - R}" y="${H - 8}" text-anchor="end" class="axis">${axDate(t1)}</text>`;
+  const ends = [];
+  shops.forEach(s => {
+    const k = slot(s), pts = byShop[s];
+    let d = '';
+    pts.forEach((r, i) => { const px = x(+new Date(r.recorded_at)), py = y(+r.price); d += i === 0 ? `M${px},${py}` : `H${px}V${py}`; });
+    d += `H${x(t1)}`;
+    svg += `<path class="ln s${k + 1}" d="${d}"${DASH[k] ? ` stroke-dasharray="${DASH[k]}"` : ''}/>`;
+    pts.forEach(r => { svg += `<circle class="mk s${k + 1}" cx="${x(+new Date(r.recorded_at))}" cy="${y(+r.price)}" r="4"/>`; });
+    ends.push({s, y: y(+pts[pts.length - 1].price)});
+  });
+  ends.sort((a, b) => a.y - b.y);                      // noms au bout des courbes, sans se chevaucher
+  ends.forEach((e, i) => { if (i && e.y - ends[i - 1].y < 15) e.y = ends[i - 1].y + 15; });
+  ends.forEach(e => { svg += `<text class="lab" x="${W - R + 8}" y="${e.y + 4}">${esc(e.s)}</text>`; });
+  svg += `<line class="cross" x1="0" x2="0" y1="${T}" y2="${H - B}" visibility="hidden"/>`;
+  svg += `<rect x="${L}" y="${T}" width="${W - L - R}" height="${H - T - B}" fill="transparent"/></svg>`;
+  const sample = k => `<svg width="24" height="10" aria-hidden="true"><line class="ln s${k + 1}" x1="1" x2="23" y1="5" y2="5"${DASH[k] ? ` stroke-dasharray="${DASH[k]}"` : ''}/></svg>`;
+  const legend = shops.map(s => `<span>${sample(slot(s))}${esc(s)}</span>`).join('');
+  const min = rows.reduce((a, r) => (+r.price < +a.price ? r : a), rows[0]);
+  const table = [...rows].sort((a, b) => new Date(b.recorded_at) - new Date(a.recorded_at))
+    .map(r => `<tr><td>${hDate(r.recorded_at)}</td><td>${esc(r.shop_name)}</td><td class="n">${fcfa(r.price)}</td></tr>`).join('');
+  el.innerHTML = `<div class="lg">${legend}</div>${svg}<div class="tip" hidden></div>
+    <p class="mut">Prix le plus bas relevé : <strong>${fcfa(min.price)}</strong> chez ${esc(min.shop_name)} (${hDate(min.recorded_at)}).</p>
+    <details class="htable"><summary>Voir tous les relevés</summary><table><thead><tr><th>Date</th><th>Boutique</th><th>Prix</th></tr></thead><tbody>${table}</tbody></table></details>`;
+  // Lecture des prix à une date : au survol de la souris ou en glissant le doigt
+  const box = el.querySelector(':scope > svg'), tip = el.querySelector('.tip'), cross = box.querySelector('.cross');
+  const show = ev => {
+    const rc = box.getBoundingClientRect(), sx = (ev.clientX - rc.left) / rc.width * W;
+    if (sx < L || sx > W - R) return hide();
+    const t = t0 + (sx - L) / (W - L - R) * (t1 - t0);
+    cross.setAttribute('x1', sx); cross.setAttribute('x2', sx); cross.setAttribute('visibility', 'visible');
+    tip.innerHTML = `<b>${hDate(t)}</b>` + shops.map(s => { const v = at(s, t), k = slot(s);
+      return v == null ? '' : `<span>${sample(k)}${esc(s)}<strong>${fcfa(v)}</strong></span>`; }).join('');
+    tip.hidden = false;
+    const px = (sx / W) * rc.width, w = tip.offsetWidth;
+    tip.style.left = Math.max(0, Math.min(rc.width - w, px > rc.width / 2 ? px - w - 12 : px + 12)) + 'px';
+  };
+  const hide = () => { tip.hidden = true; cross.setAttribute('visibility', 'hidden'); };
+  box.addEventListener('pointermove', show);
+  box.addEventListener('pointerdown', show);
+  box.addEventListener('pointerleave', ev => { if (ev.pointerType !== 'touch') hide(); });   // au doigt, la bulle reste
+  const outside = ev => {                       // ... jusqu'à un toucher ailleurs sur la page
+    if (!document.body.contains(box)) return document.removeEventListener('pointerdown', outside);
+    if (!box.contains(ev.target)) hide();
+  };
+  document.addEventListener('pointerdown', outside);
+}
+
+async function showHistory(p) {
+  const hash = routeOf();
+  try {
+    const [{data, error}, shops] = await Promise.all([db.rpc('price_history_for_product', {pid: p.id}), loadShops()]);
+    if (error) throw error;
+    if (routeOf() !== hash) return;   // l'utilisateur a changé de page entre-temps
+    const order = Object.keys(shops).sort((a, b) => a - b).map(id => shops[id]);
+    if (!(data || []).some(r => Number(r.price) > 0)) return app.insertAdjacentHTML('beforeend', `<p class="mut nohist">L'historique des prix de ce produit apparaîtra après les prochains relevés.</p>`);
+    app.insertAdjacentHTML('beforeend', `<h2>Historique des prix</h2><div class="hist" id="hist"></div>`);
+    const el = document.getElementById('hist');
+    drawHistory(el, data, order);
+    let w = el.clientWidth, timer;
+    const again = () => { clearTimeout(timer); timer = setTimeout(() => {
+      if (!el.isConnected) return window.removeEventListener('resize', again);
+      if (el.clientWidth !== w) { w = el.clientWidth; drawHistory(el, data, order); } }, 200); };
+    window.addEventListener('resize', again);
+  } catch (e) { /* l'historique est facultatif : on n'affiche rien en cas d'erreur */ }
+}
+
+// ====== Recherche par photo (gratuite : l'image est analysée dans le navigateur du visiteur) ======
+// Le modèle doit être le même que dans scraper/image_embeddings.mjs, sinon les empreintes ne se comparent pas.
+const PHOTO_MODEL = 'Xenova/clip-vit-base-patch32';
+const PHOTO_LIB = 'https://cdn.jsdelivr.net/npm/@huggingface/transformers@4.3.1/dist/transformers.min.js';
+let photoFile = null, photoKit = null;
+const photoLoads = {};
+
+let photoStep = '';
+function photoMsg(text) {
+  photoStep = text;
+  const msg = document.getElementById('p-msg');
+  if (msg) msg.textContent = text;
+}
+
+function photoProgress(info) {
+  if (info.status !== 'progress' || !info.file || !info.total) return;
+  photoLoads[info.file] = info;
+  const all = Object.values(photoLoads);
+  const loaded = all.reduce((s, f) => s + f.loaded, 0), total = all.reduce((s, f) => s + f.total, 0);
+  const bar = document.getElementById('p-bar');
+  if (bar) bar.style.width = Math.round(loaded / total * 100) + '%';
+  photoMsg(`Étape 2/3 : téléchargement du module de reconnaissance d'images, ${Math.round(loaded / 1e6)} / ${Math.round(total / 1e6)} Mo (une seule fois).`);
+}
+
+function loadPhotoKit() {
+  if (!photoKit) photoKit = (async () => {
+    photoMsg('Étape 1/3 : chargement de la bibliothèque de reconnaissance d\'images…');
+    const t = await import(PHOTO_LIB);
+    t.env.allowLocalModels = false;
+    t.env.useBrowserCache = typeof caches !== 'undefined';   // garde le module en mémoire quand c'est possible
+    photoMsg('Étape 2/3 : téléchargement du module de reconnaissance d\'images…');
+    const [processor, model] = await Promise.all([
+      t.AutoProcessor.from_pretrained(PHOTO_MODEL, {progress_callback: photoProgress}),
+      t.CLIPVisionModelWithProjection.from_pretrained(PHOTO_MODEL, {dtype: 'q8', progress_callback: photoProgress})]);
+    return {t, processor, model};
+  })().catch(e => { photoKit = null; throw e; });
+  return photoKit;
+}
+
+// Accord du visiteur pour le téléchargement du module (gardé dans le navigateur quand c'est possible)
+const photoOk = set => {
+  try { if (set) localStorage.setItem('ip_photo_ok', '1'); return localStorage.getItem('ip_photo_ok') === '1'; }
+  catch { return !!set; }
+};
+
+async function photoSearch() {
+  if (!photoFile) {
+    app.innerHTML = `<h1 class="ptitle">Recherche par photo</h1><p class="mut">Touchez l'appareil photo à côté de la barre de recherche, puis prenez ou choisissez une photo du produit.</p>`;
+    return;
+  }
+  if (!photoKit && !photoOk()) {
+    app.innerHTML = `<div class="ask"><h1 class="ptitle">Recherche par photo</h1>
+      <p>Pour reconnaître votre photo, votre appareil télécharge d'abord un module de reconnaissance d'images de plusieurs dizaines de Mo. Il ne se télécharge qu'une fois, ensuite il reste en mémoire.</p>
+      <p class="mut">Sur données mobiles, préférez le Wi-Fi.</p>
+      <p class="fol"><button type="button" class="btn primary" id="p-yes">Télécharger et chercher</button>
+      <button type="button" class="btn" id="p-no">Annuler</button></p></div>`;
+    document.getElementById('p-yes').addEventListener('click', () => { photoOk(true); photoSearch(); });
+    document.getElementById('p-no').addEventListener('click', () => { photoFile = null; go('#/'); });
+    return;
+  }
+  const hash = routeOf(), file = photoFile;
+  const preview = URL.createObjectURL(file);
+  app.innerHTML = `<div class="photo-q"><img src="${preview}" alt="Votre photo"><div>
+    <strong>Analyse de votre photo…</strong> <span class="mut" id="p-time"></span>
+    <p class="mut" id="p-msg">Préparation…</p>
+    <div class="pbar"><i id="p-bar"></i></div></div></div>`;
+  const t0 = Date.now();
+  const timer = setInterval(() => {
+    const el = document.getElementById('p-time');
+    if (el) el.textContent = `(${Math.round((Date.now() - t0) / 1000)} s)`;
+  }, 1000);
+  try {
+    const {t, processor, model} = await loadPhotoKit();
+    if (routeOf() !== hash) return;
+    photoMsg('Étape 3/3 : analyse de la photo et recherche des produits qui lui ressemblent…');
+    const image = await t.RawImage.fromBlob(file);
+    const {image_embeds} = await model(await processor(image));
+    const v = Array.from(image_embeds.data), n = Math.hypot(...v) || 1;
+    const vector = '[' + v.map(x => (x / n).toFixed(6)).join(',') + ']';
+    const {data: hits, error} = await db.rpc('search_products_by_image', {query_embedding: vector, match_count: 60});
+    if (error) throw error;
+    const good = (hits || []).filter(h => h.similarity >= 0.5);
+    let rows = [];
+    if (good.length) {
+      const {data, error: e2} = await db.from('product_prices').select('*').in('product_id', good.map(h => h.product_id));
+      if (e2) throw e2;
+      const rank = new Map(good.map((h, i) => [String(h.product_id), i]));
+      rows = (data || []).sort((a, b) => rank.get(String(a.product_id)) - rank.get(String(b.product_id))).slice(0, 24);
+    }
+    if (routeOf() !== hash) return;
+    await list('Produits qui ressemblent à votre photo', rows,
+      'Aucun produit ne ressemble à cette photo pour le moment. Essayez une photo nette du produit seul, de face.');
+    app.insertAdjacentHTML('afterbegin', `<div class="photo-q"><img src="${preview}" alt="Votre photo">
+      <p class="mut">Classés du plus ressemblant au moins ressemblant. La ressemblance est visuelle :
+      vérifiez le modèle exact (capacité, version) avant d'acheter.</p></div>`);
+  } catch (e) {
+    console.error('Recherche par photo :', e);
+    if (routeOf() !== hash) return;
+    app.innerHTML = `<h2>Recherche par photo</h2><p class="err">La recherche par photo n'a pas abouti
+      (${esc(photoStep || 'préparation')}). Vérifiez votre connexion puis réessayez.<br>
+      <small>Détail technique : ${esc(e && e.message || e)}</small></p>`;
+  } finally {
+    clearInterval(timer);
+  }
+}
+
+document.getElementById('cam').addEventListener('click', () => document.getElementById('photo').click());
+document.getElementById('photo').addEventListener('change', e => {
+  const f = e.target.files && e.target.files[0];
+  e.target.value = '';                      // permet de reprendre la même photo plus tard
+  if (!f) return;
+  photoFile = f;
+  go('#/photo/' + Date.now());  // nouvelle page de résultats (le bouton Retour fonctionne)
+});
+
+// ====== Comptes visiteurs (connexion Supabase) et produits suivis ======
+let me = null;            // visiteur connecté, ou null
+let authCfg = null;       // réglages de connexion du projet (fournisseurs Google, Apple… activés ou non)
+let authNotice = '';      // message à afficher sur la page de connexion (lien expiré…)
+const ss = {              // sessionStorage, sans planter si le navigateur le refuse
+  get: k => { try { return sessionStorage.getItem(k); } catch { return null; } },
+  set: (k, v) => { try { v == null ? sessionStorage.removeItem(k) : sessionStorage.setItem(k, v); } catch {} },
+};
+const siteUrl = () => location.origin + '/';   // toujours la racine : c'est l'adresse autorisée pour le retour de connexion
+// Adresse de retour des liens envoyés par e-mail ou par Google : elle emporte le produit à suivre,
+// car le lien de confirmation s'ouvre souvent dans un autre onglet (ou un autre appareil) où rien n'est gardé
+function returnUrl() {
+  try {
+    const f = JSON.parse(ss.get('ip_suivre') || 'null');
+    if (!f || f.id == null) return siteUrl();
+    const q = new URLSearchParams({suivre: String(f.id)});
+    if (f.price) q.set('prix', String(f.price));
+    const back = ss.get('ip_retour');
+    if (back && back.startsWith('#/')) q.set('retour', back);
+    return siteUrl() + '?' + q;
+  } catch { return siteUrl(); }
+}
+// Au retour d'un de ces liens : reprendre le produit à suivre et la page où l'on était, puis nettoyer l'adresse
+function pendingFromUrl() {
+  const q = new URLSearchParams(location.search);
+  const id = q.get('suivre');
+  if (!id) return;
+  if (/^\d{1,18}$/.test(id)) {
+    const prix = Number(q.get('prix'));
+    const back = q.get('retour') || '';
+    const pid = Number(id);
+    ss.set('ip_suivre', JSON.stringify({id: Number.isSafeInteger(pid) ? pid : id, price: Number.isFinite(prix) && prix > 0 ? prix : null}));
+    ss.set('ip_retour', back.startsWith('#/') ? back : '#/p/' + encodeURIComponent(id));
+    ss.set('ip_login', '1');
+  }
+  history.replaceState(null, '', location.pathname + location.hash);   // garde le #access_token pour Supabase
+}
+const ICON_GOOGLE = '<svg width="18" height="18" viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.2 9.1 3.6l6.8-6.8C35.8 2.4 30.3 0 24 0 14.6 0 6.6 5.4 2.7 13.3l7.9 6.1C12.5 13.6 17.8 9.5 24 9.5z"/><path fill="#4285F4" d="M46.1 24.5c0-1.6-.1-3.1-.4-4.5H24v9h12.4c-.5 2.9-2.2 5.3-4.6 6.9l7.4 5.7c4.3-4 6.9-9.9 6.9-17.1z"/><path fill="#FBBC05" d="M10.6 28.6c-.5-1.4-.8-3-.8-4.6s.3-3.2.8-4.6l-7.9-6.1C1 16.6 0 20.2 0 24s1 7.4 2.7 10.7l7.9-6.1z"/><path fill="#34A853" d="M24 48c6.5 0 11.9-2.1 15.9-5.8l-7.4-5.7c-2.1 1.4-4.8 2.3-8.5 2.3-6.2 0-11.5-4.1-13.4-9.9l-7.9 6.1C6.6 42.6 14.6 48 24 48z"/></svg>';
+const ICON_APPLE = '<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.4 12.6c0-2.6 2.1-3.8 2.2-3.9-1.2-1.8-3.1-2-3.7-2-1.6-.2-3.1.9-3.9.9s-2-.9-3.4-.9c-1.7 0-3.3 1-4.2 2.6-1.8 3.1-.5 7.7 1.3 10.2.9 1.2 1.9 2.6 3.2 2.6 1.3-.1 1.8-.8 3.3-.8s2 .8 3.4.8 2.3-1.3 3.1-2.5c1-1.4 1.4-2.8 1.4-2.9 0 0-2.7-1-2.7-4.1zM13.9 5c.7-.9 1.2-2 1.1-3.2-1 0-2.3.7-3 1.6-.7.8-1.3 2-1.1 3.1 1.1.1 2.3-.6 3-1.5z"/></svg>';
+
+function frAuthError(e) {
+  const m = String(e && e.message || e || '');
+  if (/Invalid login credentials/i.test(m)) return 'E-mail ou mot de passe incorrect.';
+  if (/Email not confirmed/i.test(m)) return 'Adresse pas encore confirmée : cliquez sur le lien reçu par e-mail.';
+  if (/already registered|already been registered/i.test(m)) return 'Un compte existe déjà avec cette adresse : connectez-vous.';
+  if (/Password should be|password.*(short|characters)/i.test(m)) return 'Mot de passe trop court.';
+  if (/rate limit|too many|security purposes/i.test(m)) return 'Trop de tentatives. Réessayez dans quelques minutes.';
+  if (/provider is not enabled/i.test(m)) return 'Ce mode de connexion n\'est pas encore activé.';
+  if (/Failed to fetch|NetworkError/i.test(m)) return 'Connexion Internet indisponible. Réessayez.';
+  return m;
+}
+
+async function loadAuthCfg() {
+  if (authCfg) return authCfg;
+  try {
+    const r = await fetch(SUPABASE_URL + '/auth/v1/settings', {headers: {apikey: SUPABASE_KEY}});
+    authCfg = r.ok ? await r.json() : {};
+  } catch { authCfg = {}; }
+  return authCfg;
+}
+
+function renderAcct() {
+  const a = document.getElementById('acct');
+  if (a) a.querySelector('span').textContent = me ? 'Mon compte' : 'Connexion';
+}
+
+// Après une connexion : suivre le produit demandé avant de se connecter, puis revenir où l'on était
+async function afterLogin() {
+  const pending = ss.get('ip_suivre'), back = ss.get('ip_retour');
+  ss.set('ip_suivre', null); ss.set('ip_retour', null); ss.set('ip_login', null);
+  if (pending) {
+    try {
+      const f = JSON.parse(pending);
+      const {error} = await db.from('watchlist').insert({product_id: f.id, price_at_follow: f.price});
+      if (error && error.code !== '23505') console.error('Suivi du produit :', error);
+    } catch (e) { console.error(e); }
+  }
+  go(back || '#/compte');
+}
+
+// Favoris : la liste des produits suivis (la même que sur « Mon compte »), sans passer par l'écran du compte
+async function favorisPage() {
+  if (!me) { ss.set('ip_retour', '#/favoris'); return loginPage('in'); }
+  return myAccount(true);
+}
+
+async function accountPage(sub) {
+  if (sub === 'nouveau-mdp') return newPasswordPage();
+  if (!me) return loginPage(sub === 'inscription' ? 'up' : 'in');
+  return myAccount();
+}
+
+async function loginPage(mode) {
+  const cfg = await loadAuthCfg();
+  const ext = cfg.external || {};
+  const providers = [['google', 'Continuer avec Google', ICON_GOOGLE], ['apple', 'Continuer avec Apple', ICON_APPLE]]
+    .filter(([k]) => ext[k]);
+  const local = location.protocol === 'file:';
+  const notice = authNotice; authNotice = '';
+  let wanted = '';
+  try { wanted = (JSON.parse(ss.get('ip_suivre') || 'null') || {}).name || ''; } catch {}
+  app.innerHTML = `<div class="auth">
+    <h1>${mode === 'up' ? 'Créer un compte' : 'Se connecter'}</h1>
+    <p class="mut">Suivez vos produits et voyez d'un coup d'œil quand leur prix baisse.</p>
+    <div class="tabs"><a href="#/compte" class="${mode === 'in' ? 'on' : ''}">Se connecter</a><a href="#/compte/inscription" class="${mode === 'up' ? 'on' : ''}">Créer un compte</a></div>
+    ${local ? '<p class="err">Le site est ouvert depuis votre ordinateur : la connexion Google ou Apple et les e-mails de confirmation ne marcheront qu\'une fois le site en ligne.</p>' : ''}
+    ${notice ? `<p class="err">${esc(notice)}</p>` : ''}
+    ${wanted && !notice ? `<p class="note">${mode === 'up' ? 'Créez un compte' : 'Connectez-vous'} pour suivre « ${esc(wanted)} ». Il sera ajouté à votre liste juste après.</p>` : ''}
+    <div id="a-msg" aria-live="polite"></div>
+    ${providers.map(([k, l, ic]) => `<button type="button" class="oauth" data-p="${k}">${ic}${l}</button>`).join('')}
+    ${providers.length ? '<div class="sep">ou avec votre e-mail</div>' : ''}
+    <form id="a-form" novalidate>
+      <label>Adresse e-mail<input id="a-email" type="email" autocomplete="email" required></label>
+      <label>Mot de passe<input id="a-pass" type="password" autocomplete="${mode === 'up' ? 'new-password' : 'current-password'}" required></label>
+      ${mode === 'up' ? '<p class="mut" style="margin:6px 0 0">8 caractères minimum.</p>' : ''}
+      <button type="submit" id="a-go">${mode === 'up' ? 'Créer mon compte' : 'Se connecter'}</button>
+    </form>
+    ${mode === 'in' ? '<button type="button" class="link" id="a-forgot">Mot de passe oublié ?</button>' : ''}
+  </div>`;
+  const msg = (html, ok) => { document.getElementById('a-msg').innerHTML = html ? `<p class="${ok ? 'note' : 'err'}">${html}</p>` : ''; };
+  const email = () => document.getElementById('a-email').value.trim();
+  app.querySelectorAll('.oauth').forEach(b => b.addEventListener('click', async () => {
+    ss.set('ip_login', '1');
+    const {error} = await db.auth.signInWithOAuth({provider: b.dataset.p, options: {redirectTo: returnUrl()}});
+    if (error) msg(esc(frAuthError(error)));
+  }));
+  document.getElementById('a-form').addEventListener('submit', async e => {
+    e.preventDefault();
+    const pass = document.getElementById('a-pass').value, go = document.getElementById('a-go');
+    if (!/^\S+@\S+\.\S+$/.test(email())) return msg('Entrez une adresse e-mail valide.');
+    if (mode === 'up' && pass.length < 8) return msg('Le mot de passe doit faire au moins 8 caractères.');
+    if (!pass) return msg('Entrez votre mot de passe.');
+    go.disabled = true; msg('');
+    ss.set('ip_login', '1');
+    if (mode === 'up') {
+      const {data, error} = await db.auth.signUp({email: email(), password: pass, options: {emailRedirectTo: returnUrl()}});
+      go.disabled = false;
+      if (error) return msg(esc(frAuthError(error)));
+      if (!data.session) msg(`Presque fini : un e-mail de confirmation a été envoyé à <strong>${esc(email())}</strong>. Cliquez sur le lien qu'il contient pour activer votre compte.` +
+        (ss.get('ip_suivre') ? ' Le produit choisi sera suivi automatiquement et vous reviendrez sur sa fiche.' : ''), true);
+    } else {
+      const {error} = await db.auth.signInWithPassword({email: email(), password: pass});
+      go.disabled = false;
+      if (error) return msg(esc(frAuthError(error)));
+    }
+  });
+  const forgot = document.getElementById('a-forgot');
+  if (forgot) forgot.addEventListener('click', async () => {
+    if (!/^\S+@\S+\.\S+$/.test(email())) return msg('Entrez d\'abord votre adresse e-mail ci-dessus.');
+    const {error} = await db.auth.resetPasswordForEmail(email(), {redirectTo: siteUrl()});
+    if (error) return msg(esc(frAuthError(error)));
+    msg(`Si un compte existe pour <strong>${esc(email())}</strong>, un e-mail vient d'être envoyé pour choisir un nouveau mot de passe.`, true);
+  });
+}
+
+function newPasswordPage() {
+  if (!me) {
+    app.innerHTML = `<div class="auth"><h1>Nouveau mot de passe</h1><p class="err">Ce lien a expiré ou a déjà servi.
+      Recommencez avec « Mot de passe oublié ? » sur la page de connexion.</p><a class="link" href="#/compte">Aller à la connexion</a></div>`;
+    return;
+  }
+  app.innerHTML = `<div class="auth"><h1>Nouveau mot de passe</h1>
+    <div id="a-msg" aria-live="polite"></div>
+    <form id="a-form" novalidate><label>Nouveau mot de passe<input id="a-pass" type="password" autocomplete="new-password" required></label>
+    <p class="mut" style="margin:6px 0 0">8 caractères minimum.</p><button type="submit">Enregistrer</button></form></div>`;
+  document.getElementById('a-form').addEventListener('submit', async e => {
+    e.preventDefault();
+    const pass = document.getElementById('a-pass').value, box = document.getElementById('a-msg');
+    if (pass.length < 8) { box.innerHTML = '<p class="err">Le mot de passe doit faire au moins 8 caractères.</p>'; return; }
+    const {error} = await db.auth.updateUser({password: pass});
+    if (error) { box.innerHTML = `<p class="err">${esc(frAuthError(error))}</p>`; return; }
+    box.innerHTML = '<p class="note">Mot de passe enregistré.</p>';
+    setTimeout(() => { go('#/compte'); }, 1200);
+  });
+}
+
+async function myAccount(favoris = false) {
+  const meta = me.user_metadata || {};
+  const name = meta.full_name || meta.name || meta.display_name || '';
+  const {data: rows, error} = await db.from('watchlist').select('product_id,price_at_follow,target_price,created_at').order('created_at', {ascending: false});
+  let body;
+  if (error) {
+    body = /watchlist/.test(error.message || '')
+      ? '<p class="err">La liste des produits suivis n\'est pas encore installée (fichier ajouter_comptes_visiteurs.sql à lancer dans Supabase).</p>'
+      : `<p class="err">${esc(error.message)}</p>`;
+  } else if (!rows.length) {
+    body = '<p class="mut">Vous ne suivez encore aucun produit. Sur la fiche d\'un produit, touchez « Suivre ce produit ».</p>';
+  } else {
+    const ids = rows.map(r => r.product_id), prods = [];
+    for (let i = 0; i < ids.length; i += 100) {
+      const {data} = await db.from('product_prices').select('*').in('product_id', ids.slice(i, i + 100));
+      prods.push(...(data || []));
+    }
+    const byId = new Map(prods.map(p => [String(p.product_id), p]));
+    await loadOffers(prods);
+    const gone = [];
+    const cards = rows.map(r => {
+      const p = byId.get(String(r.product_id));
+      if (!p) { gone.push(r.product_id); return ''; }
+      let change = '';
+      if (r.price_at_follow) {
+        const d = Number(p.min_price) - Number(r.price_at_follow);
+        change = d < 0 ? `<span class="down">En baisse de ${fcfa(-d)} depuis que vous le suivez</span>`
+               : d > 0 ? `<span class="up">+${fcfa(d)} depuis que vous le suivez</span>`
+               : '<span class="same">Prix inchangé depuis que vous le suivez</span>';
+      }
+      const tv = r.target_price != null ? Math.round(Number(r.target_price)) : '';
+      return `<div class="wcard">${card(p).replace(/<\/a>\s*$/, change + '</a>')}
+        <form class="tgt" data-tgt="${esc(r.product_id)}">
+          <label for="t-${esc(r.product_id)}">Me prévenir par e-mail à partir de (FCFA)</label>
+          <div class="tgt-row"><input id="t-${esc(r.product_id)}" type="number" inputmode="numeric" min="1" step="1" value="${tv}" placeholder="${esc(String(Math.round(Number(p.min_price)) || ''))}">
+          <button type="submit" class="btn">Enregistrer</button></div>
+          <span class="mut tgt-msg" aria-live="polite">${tv ? '' : 'Sans prix choisi, vous êtes prévenu dès que le prix baisse.'}</span>
+        </form>
+        <button type="button" class="link" data-unf="${esc(r.product_id)}">Ne plus suivre</button></div>`;
+    }).join('');
+    body = `<div class="grid">${cards}</div>` +
+      (gone.length ? `<p class="mut">${gone.length} produit${gone.length > 1 ? 's' : ''} suivi${gone.length > 1 ? 's' : ''} n'${gone.length > 1 ? 'ont' : 'a'} plus d'offre en ligne pour le moment.</p>` : '');
+  }
+  app.innerHTML = favoris
+    ? `<h1>Mes favoris${rows && rows.length ? ` (${rows.length})` : ''}</h1>
+    <p class="mut">Les produits que vous suivez. Vous voyez ici quand leur prix baisse.</p>${body}`
+    : `<h1>Mon compte</h1>
+    <p class="mut">Connecté avec ${esc(me.email || '')}${name ? ` (${esc(name)})` : ''}</p>
+    <h2>Mes produits suivis${rows && rows.length ? ` (${rows.length})` : ''}</h2>${body}
+    <p style="margin-top:28px"><button type="button" class="follow" id="logout">Se déconnecter</button></p>`;
+  app.querySelectorAll('[data-unf]').forEach(b => b.addEventListener('click', async () => {
+    b.disabled = true;
+    const {error: e2} = await db.from('watchlist').delete().eq('product_id', b.dataset.unf);
+    if (e2) { b.disabled = false; return; }
+    route();
+  }));
+  app.querySelectorAll('[data-tgt]').forEach(f => f.addEventListener('submit', async (ev) => {
+    ev.preventDefault();
+    const inp = f.querySelector('input'), msg = f.querySelector('.tgt-msg'), btn = f.querySelector('button');
+    const raw = inp.value.trim(), v = raw === '' ? null : Math.round(Number(raw));
+    if (v !== null && !(v > 0)) { msg.textContent = 'Entrez un montant en FCFA, par exemple 15000.'; return; }
+    btn.disabled = true; msg.textContent = '';
+    const {error: e3} = await db.from('watchlist').update({target_price: v, last_alert_price: null, last_alert_at: null}).eq('product_id', f.dataset.tgt);
+    btn.disabled = false;
+    msg.textContent = e3 ? 'Impossible pour le moment : ' + frAuthError(e3)
+      : v === null ? 'Prix retiré : vous serez prévenu dès que le prix baisse.' : `Enregistré : vous serez prévenu à partir de ${fcfa(v)}.`;
+  }));
+  const out = document.getElementById('logout');
+  if (out) out.addEventListener('click', async () => {
+    await db.auth.signOut();
+    go('#/');
+  });
+}
+
+// Bouton « Suivre ce produit » de la fiche produit
+async function setupFollow(p, price) {
+  const b = document.getElementById('follow'), m = document.getElementById('follow-msg');
+  if (!b) return;
+  let on = false;
+  if (me) {
+    const {data} = await db.from('watchlist').select('product_id').eq('product_id', p.id).maybeSingle();
+    on = !!data;
+  }
+  const paint = () => {
+    b.innerHTML = on ? ICON_HEART_ON + '<span>Produit suivi</span>' : ICON_HEART + '<span>Suivre ce produit</span>';
+    b.classList.toggle('on', on);
+    b.setAttribute('aria-pressed', String(on));
+  };
+  paint();
+  b.hidden = false;
+  b.addEventListener('click', async () => {
+    if (!me) {
+      ss.set('ip_suivre', JSON.stringify({id: p.id, price, name: titrePropre(p.name)}));
+      ss.set('ip_retour', routeOf());
+      authNotice = '';
+      go('#/compte');
+      return;
+    }
+    b.disabled = true; m.textContent = '';
+    const {error} = on
+      ? await db.from('watchlist').delete().eq('product_id', p.id)
+      : await db.from('watchlist').insert({product_id: p.id, price_at_follow: price});
+    b.disabled = false;
+    if (error && error.code !== '23505') { m.textContent = 'Impossible pour le moment : ' + frAuthError(error); return; }
+    on = !on; paint();
+    m.textContent = on ? 'Retrouvez-le dans « Mon compte ».' : '';
+  });
+}
+
+// ====== Adresses : /p/<produit> et /c/<catégorie> sont de vraies adresses, le reste garde le # ======
+// « Route » = l'ancienne écriture (#/p/xxx, #/c/xxx, #/compte, #/s/xxx…), que tout le code continue d'utiliser.
+const clef = () => location.pathname + location.search + location.hash;
+let lastNav = '';
+const TITRE_ACCUEIL = "Ivoire Prix : comparateur de prix en Côte d'Ivoire";
+function routeOf() {
+  if (location.hash.startsWith('#/')) return location.hash;
+  const m = /^\/(p|c)\/([^/]+)\/?$/.exec(location.pathname);
+  return m ? '#/' + m[1] + '/' + m[2] : '#/';
+}
+function urlOf(r) {
+  if (/^\/(p|c)\/[^/]/.test(r)) return r;
+  if (/^#\/(p|c)\/[^/]/.test(r)) return '/' + r.slice(2);
+  return '/' + (r.startsWith('/') ? r.slice(1) : r);          // #/compte devient /#/compte
+}
+function go(r) {
+  const u = urlOf(r);
+  if (u === location.pathname + location.search + location.hash) return route();
+  history.pushState(null, '', u);
+  return route();
+}
+function onNav() { if (clef() !== lastNav) route(); }
+// Anciens liens (#/p/xxx, #/c/xxx) : on les range tout de suite à la bonne adresse
+(() => {
+  const m = /^#\/(p|c)\/([^/]+)$/.exec(location.hash);
+  if (m && (location.pathname === '/' || location.pathname === '/index.html')) history.replaceState(null, '', '/' + m[1] + '/' + m[2]);
+})();
+// Un clic sur un lien du site ne recharge pas la page
+document.addEventListener('click', e => {
+  if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+  const a = e.target.closest && e.target.closest('a[href]');
+  if (!a || (a.target && a.target !== '_self') || a.hasAttribute('download')) return;
+  const h = a.getAttribute('href');
+  if (/^(#\/|\/(p|c)\/[^/]|\/$)/.test(h)) { e.preventDefault(); go(h); }
+});
+
+let routedOnce = false;
+async function route() {
+  const old = document.getElementById('buybar');
+  if (old) old.remove();
+  document.body.classList.remove('has-buybar');
+  closeSuggest();
+  lastNav = clef();
+  document.title = TITRE_ACCUEIL;
+  const [kind, arg = ''] = routeOf().slice(2).split('/');
+  document.querySelectorAll('#nav a').forEach(a =>      // souligne la catégorie affichée
+    a.getAttribute('href') === '/' + routeOf().slice(2) ? a.setAttribute('aria-current', 'page') : a.removeAttribute('aria-current'));
+  app.innerHTML = `<div class="skel" aria-busy="true"><span class="sr">Chargement…</span><div class="sk-t"></div><div class="sk-grid">${'<i></i>'.repeat(6)}</div></div>`;
+  try {
+    const v = decodeURIComponent(arg);
+    if (kind === 'p') await product(v);
+    else if (kind === 'c') await category(v);
+    else if (kind === 's') await search(v);
+    else if (kind === 'photo') await photoSearch();
+    else if (kind === 'compte') await accountPage(v);
+    else if (kind === 'favoris') await favorisPage();
+    else await home();
+  } catch (e) {
+    console.error(e);
+    app.innerHTML = `<div class="err"><p>Les prix n'ont pas pu être chargés. Vérifiez votre connexion Internet, puis réessayez.</p>
+      <button type="button" class="btn" id="retry">Réessayer</button></div>`;
+    document.getElementById('retry').addEventListener('click', route);
+  }
+  window.scrollTo(0, 0);
+  if (routedOnce) app.focus({preventScroll: true});   // annonce la nouvelle page aux lecteurs d'écran et place le clavier au bon endroit
+  routedOnce = true;
+}
+
+// ====== Suggestions pendant la frappe ======
+const sgInput = document.getElementById('q'), sgForm = document.getElementById('sf');
+const sgBox = document.createElement('div');
+sgBox.id = 'sg'; sgBox.className = 'sg'; sgBox.setAttribute('role', 'listbox'); sgBox.setAttribute('aria-label', 'Suggestions'); sgBox.hidden = true;
+document.body.appendChild(sgBox);
+sgInput.setAttribute('role', 'combobox');
+sgInput.setAttribute('aria-autocomplete', 'list');
+sgInput.setAttribute('aria-controls', 'sg');
+sgInput.setAttribute('aria-expanded', 'false');
+sgInput.setAttribute('autocomplete', 'off');
+let sgItems = [], sgActive = -1, sgTimer, sgSeq = 0;
+
+function closeSuggest() {
+  sgBox.hidden = true;
+  sgActive = -1;
+  sgInput.setAttribute('aria-expanded', 'false');
+  sgInput.removeAttribute('aria-activedescendant');
+}
+function paintSuggest(q) {
+  const r = sgForm.getBoundingClientRect();
+  Object.assign(sgBox.style, {left: r.left + 'px', top: (r.bottom + 6) + 'px', width: r.width + 'px'});
+  sgBox.innerHTML = sgItems.map((p, i) => `<a role="option" id="sg-${i}" class="sg-i" href="/p/${encodeURIComponent(p.slug)}" aria-selected="${i === sgActive}">
+      <span class="th">${p.image_url ? `<img loading="lazy" decoding="async" src="${esc(p.image_url)}" alt="">` : noImg()}</span>
+      <span class="tx"><b>${esc(titrePropre(p.name))}</b><span class="sub">${p.min_price != null ? `<span class="pr">${fcfa(p.min_price)}</span>` : ''}${Number(p.offers_count) > 1 ? ` ${Number(p.offers_count)} boutiques` : ''}</span></span></a>`).join('') +
+    `<a role="option" id="sg-${sgItems.length}" class="sg-all" href="#/s/${encodeURIComponent(q)}" aria-selected="${sgActive === sgItems.length}">Voir tous les résultats pour « ${esc(q)} »</a>`;
+  sgBox.hidden = false;
+  sgInput.setAttribute('aria-expanded', 'true');
+  if (sgActive >= 0) sgInput.setAttribute('aria-activedescendant', 'sg-' + sgActive); else sgInput.removeAttribute('aria-activedescendant');
+}
+sgInput.addEventListener('input', () => {
+  clearTimeout(sgTimer);
+  const q = sgInput.value.trim();
+  if (q.length < 2 || !db) return closeSuggest();
+  sgTimer = setTimeout(async () => {
+    const mine = ++sgSeq;
+    const {data, error} = await db.rpc('search_products', {q});
+    if (mine !== sgSeq || error || document.activeElement !== sgInput) return;     // réponse périmée ou champ quitté
+    sgItems = (data || []).slice(0, 6);
+    if (!sgItems.length) return closeSuggest();
+    sgActive = -1;
+    paintSuggest(q);
+  }, 220);
+});
+sgInput.addEventListener('keydown', e => {
+  if (sgBox.hidden) return;
+  const n = sgItems.length + 1;                       // les suggestions, plus « Voir tous les résultats »
+  if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+    e.preventDefault();
+    sgActive = e.key === 'ArrowDown' ? (sgActive + 1) % n : (sgActive <= 0 ? n - 1 : sgActive - 1);
+    paintSuggest(sgInput.value.trim());
+    document.getElementById('sg-' + sgActive).scrollIntoView({block: 'nearest'});
+  } else if (e.key === 'Enter' && sgActive >= 0) {
+    e.preventDefault();
+    const href = document.getElementById('sg-' + sgActive).getAttribute('href');
+    closeSuggest();
+    go(href);
+  } else if (e.key === 'Escape') {
+    closeSuggest();
+  }
+});
+sgBox.addEventListener('mousedown', e => e.preventDefault());       // garde le curseur dans le champ pendant le clic
+sgBox.addEventListener('click', closeSuggest);
+sgInput.addEventListener('blur', () => setTimeout(closeSuggest, 120));
+window.addEventListener('resize', closeSuggest);
+
+sgForm.addEventListener('submit', e => {
+  e.preventDefault();
+  const q = sgInput.value.trim();
+  clearTimeout(sgTimer); sgSeq++;                       // une suggestion tardive ne doit pas rouvrir la liste
+  closeSuggest();
+  if (q) go('#/s/' + encodeURIComponent(q));
+});
+
+// ====== Défilement : retour en haut, et en-tête qui s'efface sur téléphone quand on descend ======
+const totop = document.createElement('button');
+totop.type = 'button'; totop.className = 'totop'; totop.setAttribute('aria-label', 'Revenir en haut de la page');
+totop.innerHTML = ICON_UP;
+totop.addEventListener('click', () =>
+  window.scrollTo({top: 0, behavior: window.matchMedia('(prefers-reduced-motion:reduce)').matches ? 'auto' : 'smooth'}));
+document.body.appendChild(totop);
+const pageHeader = document.querySelector('header');
+let lastY = 0, scrollTick = false;
+window.addEventListener('scroll', () => {
+  if (scrollTick) return;
+  scrollTick = true;
+  requestAnimationFrame(() => {
+    scrollTick = false;
+    const y = window.scrollY;
+    totop.classList.toggle('on', y > 900);
+    if (y > 140 && y > lastY + 6 && window.matchMedia('(max-width:720px)').matches && document.activeElement !== sgInput) {
+      pageHeader.classList.add('away');
+      closeSuggest();
+    } else if (y < lastY - 6 || y <= 140) {
+      pageHeader.classList.remove('away');
+    }
+    lastY = y;
+  });
+}, {passive: true});
+
+(async () => {
+  if (SUPABASE_URL.includes('VOTRE-PROJET')) {
+    app.innerHTML = '<p class="err">Ouvrez index.html dans un éditeur de texte et remplacez SUPABASE_URL et SUPABASE_KEY par les valeurs de votre projet Supabase.</p>';
+    return;
+  }
+  // Retour d'un lien de connexion (Google, Apple, e-mail de confirmation ou de mot de passe oublié)
+  const callback = /access_token=/.test(location.hash);
+  const recovery = /type=recovery/.test(location.hash);
+  if (callback && !recovery) pendingFromUrl();
+  else if (location.search.includes('suivre=')) history.replaceState(null, '', location.pathname + location.hash);
+  const failed = /error_description=([^&]+)/.exec(location.hash);
+  if (failed) {
+    authNotice = decodeURIComponent(failed[1].replace(/\+/g, ' '));
+    if (/expired|invalid/i.test(authNotice)) authNotice = 'Ce lien a expiré ou a déjà servi. Recommencez la connexion.';
+    history.replaceState(null, '', location.pathname + location.search + '#/compte');
+  }
+  if (!window.supabase) {          // la bibliothèque n'a pas pu se télécharger (connexion coupée)
+    app.innerHTML = `<div class="err"><p>Le site n'a pas pu se charger. Vérifiez votre connexion Internet, puis réessayez.</p>
+      <button type="button" class="btn" onclick="location.reload()">Réessayer</button></div>`;
+    return;
+  }
+  db = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+  const catsReq = db.from('categories').select('*').order('name').then(r => r, () => ({data: []}));   // en même temps que la session
+  const {data: {session}} = await db.auth.getSession();     // lit aussi une connexion revenue dans l'adresse
+  me = session ? session.user : null;
+  renderAcct();
+  db.auth.onAuthStateChange((event, s) => {
+    me = s ? s.user : null;
+    renderAcct();
+    // pas d'appel à Supabase directement ici (recommandation Supabase) : on laisse finir ce traitement
+    setTimeout(() => {
+      if (event === 'PASSWORD_RECOVERY') { go('#/compte/nouveau-mdp'); return; }
+      if (event === 'SIGNED_IN' && ss.get('ip_login')) { afterLogin(); return; }
+      if (event === 'SIGNED_OUT' && routeOf().startsWith('#/compte')) route();
+    }, 0);
+  });
+  const {data} = await catsReq;
+  // ordre alphabétique, sauf « Alimentation » placée en dernier
+  cats = (data || []).sort((a, b) => (a.slug === 'alimentation') - (b.slug === 'alimentation'));
+  const navEl = document.getElementById('nav');
+  navEl.innerHTML = cats.map(c => `<a href="/c/${encodeURIComponent(c.slug)}">${esc(c.name)}</a>`).join('');
+  const navMore = () => navEl.classList.toggle('scroll-on', navEl.scrollLeft + navEl.clientWidth < navEl.scrollWidth - 4);
+  navEl.addEventListener('scroll', navMore, {passive: true}); window.addEventListener('resize', navMore); navMore();
+  history.scrollRestoration = 'manual';
+  window.addEventListener('popstate', onNav);
+  window.addEventListener('hashchange', onNav);
+  if (callback && me && recovery) go('#/compte/nouveau-mdp');
+  else if (callback && me) afterLogin();
+  else route();
+})();
+
+// Bouton « Installer l'application » : caché si l'application est déjà installée ou si le navigateur ne sait pas l'installer.
+// Android et ordinateur : le navigateur annonce « beforeinstallprompt » et on déclenche son invitation.
+// iPhone et iPad : aucune invitation n'existe, le bouton affiche la marche à suivre (Partager, puis Sur l'écran d'accueil).
+(() => {
+  const zone = document.getElementById('inst'), bouton = document.getElementById('inst-btn'), aide = document.getElementById('inst-ios');
+  if (!zone || !bouton) return;
+  const installee = () => navigator.standalone === true || (window.matchMedia && matchMedia('(display-mode: standalone)').matches);
+  const apple = /iPhone|iPad|iPod/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+  let invitation = null;
+  const montrer = () => { if (!installee()) zone.hidden = false; };
+  window.addEventListener('beforeinstallprompt', e => { e.preventDefault(); invitation = e; montrer(); });
+  window.addEventListener('appinstalled', () => { invitation = null; zone.hidden = true; });
+  if (apple) montrer();
+  bouton.addEventListener('click', async () => {
+    if (invitation) {
+      const demande = invitation; invitation = null;
+      try { await demande.prompt(); await demande.userChoice; } catch (e) {}
+      zone.hidden = true;
+    } else if (aide) { aide.hidden = !aide.hidden; }
+  });
+})();
+
+// Application installable : le service worker n'est enregistré que sur une vraie adresse https (ou localhost)
+if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.hostname === 'localhost')) {
+  window.addEventListener('load', () => navigator.serviceWorker.register('/sw.js').catch(() => {}));
+}
+</script>
+</body>
+</html>

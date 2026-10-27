@@ -6,7 +6,7 @@
 <link rel="icon" type="image/svg+xml" href="/icons/icon.svg">
 <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
 <link rel="manifest" href="/manifest.webmanifest">
-<meta name="theme-color" content="#F77F00">
+<meta name="theme-color" content="#073D32">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="Ivoire Prix">
@@ -27,7 +27,7 @@
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@90..125,400..800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@90..125,400..800&family=Playfair+Display:wght@600;700;800&display=swap">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Ivoire Prix","url":"https://ivoire-prix-robot.vaniebigohiroland.workers.dev/","inLanguage":"fr-CI","description":"Comparateur de prix des boutiques en ligne de Côte d'Ivoire"}</script>
 <title>Ivoire Prix : comparateur de prix en Côte d'Ivoire</title>
 <style>
@@ -36,32 +36,33 @@
    Toutes les couleurs passent par ces variables : le mode sombre ne fait que les redéfinir. */
 :root{
   color-scheme:light;
-  --paper:#FBFBF9; --card:#FFFFFF; --ink:#1E2320; --mut:#5D645F; --line:#E1E4DF; --field:#C9CEC8;
-  --well:#F0F1ED; --band:#F0F1ED; --tile:#F0F1ED; --on-tile:#5D645F; --dots:#BEC4BD; --tk-bg:#FFFFFF;
+  --paper:#F7F3EA; --card:#FFFCF6; --ink:#16231E; --mut:#625F54; --line:#E6DEC9; --field:#CFC5AB;
+  --well:#EFE8D6; --band:#EFE8D6; --tile:#FFFFFF; --on-tile:#625F54; --dots:#CDC3A8; --tk-bg:#FFFCF6;
+  --deep:#073D32; --deeper:#062C26; --gold:#D8AD58; --ivory:#F7F3EA;
   --s1:#2a78d6; --s2:#c2457a; --s3:#9a6b00; --s4:#0E7C74; --s5:#6b4bb8; --s6:#5f7a1f; --s7:#a8431f; --s8:#555d6b; --s9:#8a6d00; --s10:#b3261e;
   --r-s:6px; --r-m:10px; --r-l:16px;
-  --orange:#F77F00; --orange-h:#FF9426; --orange-t:#FFE6CC; --on-orange:#1E2320;
-  --green:#00754A; --green-t:#E2F2E9; --on-green:#FFFFFF; --red:#B42318;
+  --orange:#D8AD58; --orange-h:#E6BF72; --orange-t:rgba(216,173,88,.30); --on-orange:#062C26;
+  --green:#0A6B4F; --green-t:#E3EEE4; --on-green:#FFFFFF; --red:#B42318;
   --err-bg:#FDECEC; --err-ink:#8E1B1B; --note-ink:#0B4F33;
-  --tk-edge:rgba(30,35,32,.28); --tk-shadow:rgba(30,35,32,.10);
+  --tk-edge:rgba(7,61,50,.22); --tk-shadow:rgba(7,61,50,.10);
   --chev:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1.5l5 5 5-5' fill='none' stroke='%231E2320' stroke-width='2'/%3E%3C/svg%3E");
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
   color-scheme:dark;
-  --paper:#141816; --card:#1D2220; --ink:#ECEEEA; --mut:#A4ABA6; --line:#2E3531; --field:#4A524D;
-  --well:#1F2421; --band:#0E110F; --tile:#BFC4BD; --dots:#59615C; --tk-bg:#262C28;
+  --paper:#0B1A15; --card:#10241D; --ink:#F1EDE0; --mut:#A9B0A6; --line:#1F3B31; --field:#3B5A4E;
+  --well:#143127; --band:#06120E; --tile:#E9E2CE; --dots:#4B665A; --tk-bg:#143127;
   --s1:#3987e5; --s2:#d55181; --s3:#c98500; --s4:#2BB3A6; --s5:#9b7fe0; --s6:#a9c24a; --s7:#e0805a; --s8:#9aa4b8; --s9:#d4b44a; --s10:#ff7b72;
-  --orange-t:rgba(247,127,0,.25); --green:#45C98C; --green-t:#163323; --on-green:#0B1F15; --red:#FF8A80;
+  --orange-t:rgba(216,173,88,.28); --green:#55D6A0; --green-t:#12382B; --on-green:#06120E; --red:#FF8A80;
   --err-bg:#3A1C1C; --err-ink:#FFB4AB; --note-ink:#A6F0C6;
   --tk-edge:rgba(255,255,255,.14); --tk-shadow:rgba(0,0,0,.5);
   --chev:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1.5l5 5 5-5' fill='none' stroke='%23ECEEEA' stroke-width='2'/%3E%3C/svg%3E");
 }}
 :root[data-theme="dark"]{
   color-scheme:dark;
-  --paper:#141816; --card:#1D2220; --ink:#ECEEEA; --mut:#A4ABA6; --line:#2E3531; --field:#4A524D;
-  --well:#1F2421; --band:#0E110F; --tile:#BFC4BD; --dots:#59615C; --tk-bg:#262C28;
+  --paper:#0B1A15; --card:#10241D; --ink:#F1EDE0; --mut:#A9B0A6; --line:#1F3B31; --field:#3B5A4E;
+  --well:#143127; --band:#06120E; --tile:#E9E2CE; --dots:#4B665A; --tk-bg:#143127;
   --s1:#3987e5; --s2:#d55181; --s3:#c98500; --s4:#2BB3A6; --s5:#9b7fe0; --s6:#a9c24a; --s7:#e0805a; --s8:#9aa4b8; --s9:#d4b44a; --s10:#ff7b72;
-  --orange-t:rgba(247,127,0,.25); --green:#45C98C; --green-t:#163323; --on-green:#0B1F15; --red:#FF8A80;
+  --orange-t:rgba(216,173,88,.28); --green:#55D6A0; --green-t:#12382B; --on-green:#06120E; --red:#FF8A80;
   --err-bg:#3A1C1C; --err-ink:#FFB4AB; --note-ink:#A6F0C6;
   --tk-edge:rgba(255,255,255,.14); --tk-shadow:rgba(0,0,0,.5);
   --chev:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1.5l5 5 5-5' fill='none' stroke='%23ECEEEA' stroke-width='2'/%3E%3C/svg%3E");
@@ -112,10 +113,6 @@ nav a:hover{color:var(--ink)}
 nav a[aria-current]{color:var(--ink);border-bottom-color:var(--orange)}
 
 /* Accueil : le ticket de comparaison */
-.hero{display:grid;grid-template-columns:minmax(0,1fr);gap:24px 56px;align-items:center;padding:28px 0 36px;
-  background:var(--band);box-shadow:0 0 0 100vmax var(--band);clip-path:inset(0 -100vmax)}
-.hero h1{margin:0 0 16px;font-size:clamp(34px,10vw,44px);line-height:1}
-.hero p{margin:0;font-size:16px;line-height:1.55;max-width:42ch;color:var(--ink)}
 .tk-wrap{filter:drop-shadow(0 0 1px var(--tk-edge)) drop-shadow(0 14px 22px var(--tk-shadow))}
 .ticket{background:var(--tk-bg);padding:16px 16px 30px;border-radius:var(--r-s) var(--r-s) 0 0;
   -webkit-mask:conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) 50%/18px 100%;
@@ -312,9 +309,6 @@ circle.s1{fill:var(--s1)}circle.s2{fill:var(--s2)}circle.s3{fill:var(--s3)}circl
   #sf .go{padding:0 20px}
   #sf .go-i{display:none}
   nav a{padding:9px 0 10px}
-  .hero{grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);padding:44px 0 52px}
-  .hero h1{font-size:clamp(36px,5.4vw,62px)}
-  .hero p{font-size:18px}
   .ticket{padding:20px 22px 34px}
   .grid{grid-template-columns:repeat(auto-fill,minmax(178px,1fr));gap:30px 20px}
   .sk-grid{grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:30px 20px}
@@ -432,13 +426,189 @@ header.away{transform:translateY(-100%)}
   .card .img img{transition:transform .35s cubic-bezier(.2,.7,.2,1)}
   .card:hover .img img{transform:scale(1.04)}
 }
+
+/* ===== Refonte : vert profond, ivoire et or =====
+   Les couleurs viennent des variables du haut du fichier (le mode sombre ne fait que les redéfinir).
+   Les règles ci-dessous s'ajoutent aux précédentes : en-tête, accueil, cartes produit, barre du téléphone, pied de page. */
+h1,h2{font-family:"Playfair Display",Georgia,"Times New Roman",serif;font-stretch:100%;letter-spacing:-.01em}
+h2{font-weight:700;font-size:clamp(24px,3.2vw,32px);line-height:1.15;margin:52px 0 18px}
+.sec-sub{margin:-8px 0 20px;color:var(--mut);font-size:15px}
+section[id]{scroll-margin-top:88px}
+header :focus-visible,.hero :focus-visible,.bnav :focus-visible,.foot :focus-visible,.trust :focus-visible,.promo-band :focus-visible{outline-color:var(--gold)}
+
+/* En-tête */
+header{background:var(--deep);color:var(--ivory);border-bottom:0}
+.bar{flex-wrap:wrap;gap:4px 10px;padding:10px 0}
+.logo{color:var(--ivory);font-family:"Playfair Display",Georgia,serif;font-size:27px;font-weight:700;letter-spacing:-.01em;text-transform:lowercase;line-height:1}
+.logo i{width:34px;height:34px;background:transparent;border-radius:0}
+.logo span{position:static;width:auto;height:auto;overflow:visible;clip-path:none}
+.logo b{color:var(--gold);font-weight:700}
+.mainnav{display:none}
+.acct{color:var(--ivory);font-size:14px}
+.acct:hover{background:rgba(247,243,234,.12)}
+.fav{margin-left:auto}
+header #sf{margin-left:0}
+.is-home .fav{margin-left:auto}
+nav#nav{border-top:1px solid rgba(247,243,234,.14)}
+nav#nav a{color:rgba(247,243,234,.74)}
+nav#nav a:hover{color:#fff}
+nav#nav a[aria-current]{color:#fff;border-bottom-color:var(--gold)}
+nav#nav.scroll-on::after{color:var(--gold);background:linear-gradient(90deg,transparent,var(--deep) 62%)}
+.is-home #nav{display:none}
+header #sf{border:0;border-radius:999px;background:var(--card);color:var(--ink);min-height:46px}
+header #sf .go{border-left:0;border-radius:999px;margin:3px}
+#sf .go{background:var(--gold);color:var(--deeper)}
+#sf .go:hover{background:var(--orange-h)}
+@media (max-width:720px){
+  header #sf{order:5;flex:1 0 100%;margin-bottom:6px}
+}
+@media (min-width:721px){
+  .bar{gap:8px 22px;padding:12px 0}
+  .mainnav{display:flex;gap:0 30px;margin-left:34px}
+  .acct{padding:8px 10px}
+  .mainnav a,.mainnav button{background:none;border:0;color:rgba(247,243,234,.78);font-weight:600;font-size:15px;padding:12px 0 10px;border-bottom:3px solid transparent}
+  .mainnav a:hover,.mainnav button:hover{color:#fff}
+  .mainnav [aria-current]{color:#fff;border-bottom-color:var(--gold)}
+  header #sf{margin-left:auto;min-width:240px;max-width:420px}
+  .fav{margin-left:0}
+  .is-home .fav{margin-left:auto}
+  header #sf + .fav{margin-left:0}
+}
+
+/* Tablette : le texte des icônes Favoris et Connexion s'efface pour que l'en-tête reste sur une seule ligne */
+@media (min-width:721px) and (max-width:979px){
+  .acct span{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+  .mainnav{gap:0 22px;margin-left:20px}
+  header #sf{min-width:180px}
+}
+
+/* Accueil : grande zone du haut */
+.hero{position:relative;isolation:isolate;overflow:hidden;margin:16px 0 0;border-radius:24px;color:var(--ivory);min-height:340px;
+  background:linear-gradient(135deg,var(--deeper),var(--deep) 58%,#0B5444)}
+.hero::before{content:"";position:absolute;inset:0;z-index:-2;background:url(/img/hero-abidjan.svg) right bottom/auto 100% no-repeat}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,var(--deeper) 0,rgba(6,44,38,.9) 36%,rgba(6,44,38,0) 74%)}
+.hero-in{padding:26px 20px 22px;max-width:680px}
+.hero h1{margin:0 0 12px;color:var(--ivory);font-weight:700;font-size:clamp(33px,9vw,56px);line-height:1.06}
+.hero h1 em{display:block;font-style:normal;color:var(--gold)}
+.hero .lead{margin:0 0 22px;max-width:44ch;font-size:16px;line-height:1.55;color:rgba(247,243,234,.9)}
+#hero-search{max-width:600px}
+.hero #sf{min-height:58px;border:0;border-radius:18px;background:var(--card);color:var(--ink);flex-wrap:wrap;padding:6px;overflow:visible;box-shadow:0 14px 34px rgba(0,0,0,.3)}
+.hero #q{flex:1 1 60%;padding:10px 6px 10px 12px;font-size:16px}
+.hero #sf .cam{width:46px;color:var(--ink)}
+.hero #sf .go{flex:1 0 100%;order:5;display:flex;align-items:center;justify-content:center;gap:8px;min-height:48px;margin:6px 0 0;border:0;border-radius:12px;padding:0 20px;font-weight:700}
+.hero #sf .go-t{position:static;width:auto;height:auto;overflow:visible;clip-path:none}
+.sugg{list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 0;padding:0}
+.sugg a{display:inline-flex;align-items:center;min-height:40px;padding:6px 15px;border:1px solid rgba(247,243,234,.38);border-radius:999px;background:rgba(247,243,234,.08);color:var(--ivory);font-size:14px;font-weight:600}
+.sugg a:hover{background:rgba(247,243,234,.2)}
+@media (max-width:720px){
+  .hero::before{background-size:cover;background-position:70% bottom;opacity:.55}
+  .hero::after{background:linear-gradient(180deg,rgba(6,44,38,.92) 0,rgba(6,44,38,.7) 100%)}
+}
+@media (min-width:721px){
+  .hero{min-height:380px;margin-top:20px;border-radius:30px}
+  .hero-in{padding:44px 48px 40px}
+  .hero .lead{font-size:18px}
+  #hero-search{max-width:640px}
+  .hero #sf{border-radius:999px;flex-wrap:nowrap;padding:5px}
+  .hero #q{flex:1;padding:12px 8px 12px 20px;font-size:17px}
+  .hero #sf .go{flex:none;order:0;margin:0;min-height:50px;border-radius:999px;padding:0 30px}
+  .hero #sf .go-i{display:none}
+}
+
+/* Catégories */
+.cats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.cat{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;min-height:108px;padding:14px 8px;background:var(--card);border:1px solid var(--line);border-radius:16px;
+  color:var(--ink);font-size:14px;font-weight:600;line-height:1.25;text-align:center;transition:border-color .2s,box-shadow .2s,transform .2s}
+.cat svg{color:var(--green)}
+.cat:hover{border-color:var(--gold);box-shadow:0 10px 24px var(--tk-shadow)}
+@media (min-width:721px){.cats{gap:14px}.cat{min-height:116px;font-size:15px}}
+@media (min-width:1024px){.cats{grid-template-columns:repeat(auto-fit,minmax(104px,1fr));gap:12px}.cat{font-size:14px}}
+
+/* Cartes produit : le lien, et le cœur à côté */
+.cw{position:relative;min-width:0;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:10px 10px 14px;transition:border-color .2s,box-shadow .2s}
+.cw:hover{border-color:var(--gold);box-shadow:0 12px 28px var(--tk-shadow)}
+.cw .card .img{background:var(--tile);border-radius:12px;margin-bottom:10px}
+.card .pl{flex-direction:row;flex-wrap:wrap;align-items:baseline;gap:0 8px}
+.card .pl .from{flex:0 0 100%}
+.was{color:var(--mut);font-size:13px;font-weight:500}
+.card h3{font-weight:600;color:var(--ink)}
+.promo{background:var(--deep);color:#fff;border-radius:999px;box-shadow:none;font-size:12px;padding:6px 9px;top:8px;left:8px}
+.heart{position:absolute;top:18px;right:18px;z-index:2;display:grid;place-items:center;width:44px;height:44px;padding:0;border:1px solid var(--line);border-radius:50%;background:var(--card);color:var(--ink)}
+.heart:hover{border-color:var(--gold)}
+.heart[aria-pressed="true"]{color:var(--red);border-color:var(--red)}
+.heart:disabled{opacity:.6;cursor:wait}
+.grid.rail > .cw{flex:0 0 min(46vw,190px);scroll-snap-align:start}
+.grid.rail > .card{flex:initial}
+.as-list .cw .card{padding-right:46px}
+.wcard .cw{border:0;padding:0;background:none;box-shadow:none}
+
+/* Bandeaux */
+.trust{display:grid;grid-template-columns:1fr;margin:48px 0 0;padding:6px 20px;border-radius:18px;background:var(--deep);color:var(--ivory)}
+.trust>div{display:flex;align-items:center;gap:14px;padding:14px 0}
+.trust>div+div{border-top:1px solid rgba(247,243,234,.16)}
+.trust svg{flex:none;color:var(--gold)}
+.trust p{display:flex;flex-direction:column;margin:0;font-size:14px;line-height:1.4;color:rgba(247,243,234,.82)}
+.trust b{font-size:15px;color:var(--ivory)}
+.duel{display:grid;gap:22px 56px;align-items:center;margin-top:44px}
+.duel h2{margin:0 0 10px}
+.duel p{margin:0;max-width:44ch}
+.promo-band{position:relative;isolation:isolate;overflow:hidden;display:flex;flex-direction:column;align-items:flex-start;gap:18px;margin-top:56px;padding:30px 22px;border-radius:22px;
+  background:linear-gradient(120deg,var(--deeper),var(--deep));color:var(--ivory)}
+.promo-band::after{content:"";position:absolute;z-index:-1;right:-50px;top:-60px;width:260px;height:260px;border-radius:50%;background:radial-gradient(circle,rgba(216,173,88,.5),rgba(216,173,88,0) 68%)}
+.promo-band h2{margin:0 0 8px;color:var(--ivory);font-size:clamp(22px,3vw,30px)}
+.promo-band p{margin:0;max-width:56ch;color:rgba(247,243,234,.86)}
+.promo-band .btn{white-space:normal}
+@media (min-width:721px){
+  .trust{grid-template-columns:repeat(3,minmax(0,1fr));padding:10px 14px}
+  .trust>div{padding:12px 20px}
+  .trust>div+div{border-top:0;border-left:1px solid rgba(247,243,234,.16)}
+  .duel{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  .promo-band{flex-direction:row;align-items:center;justify-content:space-between;padding:36px 44px}
+}
+
+/* Boutons et pied de page */
+.foot{background:var(--deeper);color:rgba(247,243,234,.8);border-top:0;margin-top:72px}
+.foot .btn{background:transparent;color:var(--ivory);border-color:rgba(247,243,234,.55)}
+.foot .btn:hover{background:rgba(247,243,234,.14)}
+.btn.primary{border-color:var(--gold)}
+
+/* Barre de navigation du téléphone (reliée aux pages existantes) */
+.bnav{display:none}
+@media (max-width:720px){
+  .bnav{position:fixed;left:0;right:0;bottom:0;z-index:7;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));background:var(--deep);border-top:1px solid rgba(247,243,234,.16);padding-bottom:env(safe-area-inset-bottom)}
+  .bnav a,.bnav button{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-height:60px;padding:6px 2px;background:none;border:0;color:rgba(247,243,234,.74);font-size:12px;font-weight:600}
+  .bnav [aria-current]{color:var(--gold)}
+  body{padding-bottom:calc(60px + env(safe-area-inset-bottom))}
+  body.has-buybar{padding-bottom:0}
+  .has-buybar .bnav{display:none}
+  .totop{bottom:76px}
+  .has-buybar .totop{bottom:88px}
+}
+
+
+/* Pages intérieures : recherche, catégorie, fiche produit, compte */
+.ptitle{font-weight:700;font-size:clamp(28px,4vw,40px);line-height:1.1;margin:28px 0 14px}
+.ptitle::after{content:"";display:block;width:56px;height:4px;margin-top:12px;border-radius:4px;background:var(--gold)}
+.tools{padding:12px 16px;background:var(--card);border:1px solid var(--line);border-radius:16px}
+.top .img{border:1px solid var(--line);background:var(--tile)}
+.pname{font-family:"Playfair Display",Georgia,serif;font-weight:700;font-size:clamp(23px,3vw,32px);line-height:1.2}
+.bestbox{padding:16px 18px;background:var(--card);border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:16px}
+.bestbox .btn{width:100%}
+.tag{background:var(--deep);color:#fff}
+.offer.best{background:var(--green-t);margin:0 -12px;padding-left:12px;padding-right:12px;border-radius:12px}
+.follow.on{background:var(--deep);color:var(--ivory);border-color:var(--deep)}
+.auth{padding:28px 24px;background:var(--card);border:1px solid var(--line);border-radius:22px;box-shadow:0 18px 40px var(--tk-shadow)}
+.auth h1{margin-top:0}
+.auth .tabs a.on{border-color:var(--gold)}
+@media (min-width:721px){.bestbox .btn{width:auto}}
 </style>
 </head>
 <body>
 <header><div class="wrap">
   <div class="bar">
-    <a class="logo" href="#/" aria-label="Ivoire Prix, accueil"><i><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1E2320" stroke-width="2.4" stroke-linejoin="round" aria-hidden="true"><path d="M3 12V4h8l10 10-8 8L3 12z"/><circle cx="7.5" cy="8.5" r="1.4" fill="#1E2320"/></svg></i><span>Ivoire Prix</span></a>
-    <form id="sf" role="search"><input id="q" type="search" placeholder="Chercher" aria-label="Rechercher un produit"><button type="button" class="cam" id="cam" title="Rechercher avec une photo" aria-label="Rechercher avec une photo"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg></button><input id="photo" type="file" accept="image/*" hidden><button class="go"><span class="go-t">Comparer</span><svg class="ic go-i" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg></button></form>
+    <a class="logo" href="#/" aria-label="Ivoire Prix, accueil"><i><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#D8AD58" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M3 12V4h8l10 10-8 8L3 12z"/><circle cx="7.5" cy="8.5" r="1.4" fill="#D8AD58"/></svg></i><span>Ivoire <b>Prix</b></span></a>
+    <nav class="mainnav" aria-label="Navigation principale"><a href="/" data-main="home">Accueil</a><button type="button" data-goto="categories">Catégories</button><button type="button" data-goto="offres">Promotions</button></nav>
+    <form id="sf" role="search"><input id="q" type="search" placeholder="Quel produit cherchez-vous ?" aria-label="Rechercher un produit"><button type="button" class="cam" id="cam" title="Rechercher avec une photo" aria-label="Rechercher avec une photo"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg></button><input id="photo" type="file" accept="image/*" hidden><button class="go"><span class="go-t">Rechercher</span><svg class="ic go-i" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg></button></form>
     <a class="acct fav" id="fav" href="#/favoris"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5s-8-4.7-8-10.6A4.4 4.4 0 0 1 12 7a4.4 4.4 0 0 1 8 2.9c0 5.9-8 10.6-8 10.6z"/></svg><span>Favoris</span></a>
     <a class="acct" id="acct" href="#/compte"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg><span>Connexion</span></a>
   </div>
@@ -450,6 +620,13 @@ header.away{transform:translateY(-100%)}
     <button type="button" class="btn" id="inst-btn">Installer l'application</button>
     <p class="inst-ios" id="inst-ios" role="status" hidden>Sur iPhone et iPad : touchez le bouton Partager de Safari, puis « Sur l'écran d'accueil ».</p>
   </div></div></footer>
+
+<nav class="bnav" id="bnav" aria-label="Navigation du téléphone">
+  <a href="/" data-b="home"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg><span>Accueil</span></a>
+  <button type="button" data-goto="categories" data-b="cats"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="6.5" height="6.5" rx="1.5"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.5"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.5"/><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.5"/></svg><span>Catégories</span></button>
+  <a href="#/favoris" data-b="favoris"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5s-8-4.7-8-10.6A4.4 4.4 0 0 1 12 7a4.4 4.4 0 0 1 8 2.9c0 5.9-8 10.6-8 10.6z"/></svg><span>Favoris</span></a>
+  <a href="#/compte" data-b="compte"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg><span>Compte</span></a>
+</nav>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js" integrity="sha384-0w2KAL2YHP6wKOkUDzkCDGgVvfmHnj02DHeQ6XcHOgTfFsGyonKOpShMH1x6nk9o" crossorigin="anonymous"></script>
 <script>
@@ -508,7 +685,7 @@ function liveInfo(p) {
   return {shops: l.length, min: Number(l[0].price), gap: Number(l[l.length - 1].price) - Number(l[0].price), offer: l[0]};
 }
 
-const card = (p, disc = {}) => {
+const cardLink = (p, disc = {}) => {
   const L = liveInfo(p), d = disc[p.product_id];
   const pct = d ? Math.round((d.original_price - d.price) / d.original_price * 100) : 0;
   const many = L.shops > 1, out = L.shops === 0;
@@ -518,8 +695,13 @@ const card = (p, disc = {}) => {
   return `<a class="card${out ? ' out' : ''}" href="/p/${encodeURIComponent(p.slug)}">
   <div class="img">${p.image_url ? `<img loading="lazy" decoding="async" src="${esc(p.image_url)}" alt="">` : noImg()}${pct > 0 ? `<span class="promo">-${pct} %</span>` : ''}</div>
   <h3>${esc(titrePropre(p.name))}</h3>
-  <div class="pl">${many ? '<span class="from">à partir de</span>' : ''}${priceHtml(out ? p.min_price : L.min)}</div>
+  <div class="pl">${many ? '<span class="from">à partir de</span>' : ''}${priceHtml(out ? p.min_price : L.min)}${pct > 0 && d && Number(d.price) === L.min ? `<s class="was">${fcfa(d.original_price)}</s>` : ''}</div>
   <div class="meta"><span class="cnt">${where}</span>${gapLine(p)}</div></a>`;
+};
+// Carte produit : le lien, et le cœur (« Suivre ce produit », la même liste que « Favoris ») à côté, pas dedans
+const card = (p, disc = {}) => {
+  const L = liveInfo(p), prix = L.min != null ? L.min : p.min_price, nom = titrePropre(p.name);
+  return `<div class="cw">${cardLink(p, disc)}<button type="button" class="heart" data-pid="${esc(p.product_id)}" data-price="${prix != null ? Number(prix) : ''}" data-name="${esc(nom)}" aria-pressed="false" aria-label="Suivre ce produit : ${esc(nom)}" title="Suivre ce produit">${ICON_HEART}</button></div>`;
 };
 
 // Offres (par produit) et boutiques, gardées en mémoire pour ne pas redemander à chaque filtre
@@ -761,9 +943,23 @@ async function dealsHtml(skip) {
     const rank = new Map(ids.map((id, i) => [id, i]));
     prods.sort((a, b) => rank.get(a.product_id) - rank.get(b.product_id));
     const disc = await bestDiscount(prods);
-    return `<h2>Bonnes affaires du moment</h2><div class="grid rail">${prods.map(p => card(p, disc)).join('')}</div>`;
+    return `<section id="offres"><h2>Nos meilleures offres du moment</h2><p class="sec-sub">Des produits dont au moins une boutique affiche un prix barré.</p><div class="grid rail">${prods.map(p => card(p, disc)).join('')}</div></section>`;
   } catch { return ''; }         // section facultative : en cas d'erreur, on ne l'affiche pas
 }
+
+const CAT_ICONS = {
+  telephones: '<rect x="7" y="2.5" width="10" height="19" rx="2.2"/><path d="M11 18.5h2"/>',
+  informatique: '<rect x="4.5" y="5" width="15" height="10.5" rx="1.5"/><path d="M2.5 19h19"/>',
+  electromenager: '<rect x="5" y="2.5" width="14" height="19" rx="2.2"/><circle cx="12" cy="13.5" r="4"/><path d="M8 6h.01M11 6h.01"/>',
+  'tv-audio': '<rect x="3" y="5" width="18" height="12" rx="2"/><path d="M8 21h8M12 17v4"/>',
+  alimentation: '<path d="M3 4h2.2l2.2 11h10.4l2.2-8.2H6.2"/><circle cx="9.5" cy="19.5" r="1.4"/><circle cx="17" cy="19.5" r="1.4"/>',
+  maison: '<path d="M3 11l9-8 9 8"/><path d="M5 10v10.5h14V10"/><path d="M10 20.5v-6h4v6"/>',
+  mode: '<path d="M8.5 3 3 7l3 3 2-1.6V21h8V8.4L18 10l3-3-5.5-4a3.6 3.6 0 0 1-7 0z"/>',
+  parfumerie: '<rect x="6.5" y="10" width="11" height="11" rx="2.2"/><path d="M10 10V6.5h4V10M9 6.5h6M12 3v3.5"/>',
+  meubles: '<path d="M4.5 11V8a3 3 0 0 1 3-3h9a3 3 0 0 1 3 3v3"/><rect x="2.5" y="11" width="19" height="6" rx="2"/><path d="M5 17v2.5M19 17v2.5"/>'
+};
+const catIcon = slug => `<svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${CAT_ICONS[slug] || ''}</svg>`;
+const SUGGESTIONS = ['iPhone', 'Samsung', 'Téléviseur', 'Ordinateur', 'Réfrigérateur', 'Riz'];
 
 async function home() {
   const cmp = await db.from('product_prices').select('*').gt('offers_count', 1).order('offers_count', {ascending: false}).limit(12);
@@ -774,23 +970,37 @@ async function home() {
   const names = Object.values(shops);
   let shopText = "les boutiques en ligne de Côte d'Ivoire";
   if (names.length) try { shopText = new Intl.ListFormat('fr', {type: 'conjunction'}).format(names); } catch { shopText = names.join(', '); }
-  app.innerHTML = `<section class="hero"><div>
-      <h1>Le même produit, pas le même prix.</h1>
-      <p>Chaque jour, Ivoire Prix relève les prix de ${esc(shopText)}. Cherchez un produit et achetez là où il coûte le moins.</p>
-    </div>${heroTicket(cmp.data, shops)}</section>`;
-  app.querySelectorAll('.tk-gap .price').forEach(countUp);
+  app.innerHTML = `<section class="hero" aria-labelledby="hero-t"><div class="hero-in">
+      <h1 id="hero-t">Les meilleurs prix, <em>au même endroit.</em></h1>
+      <p class="lead">Comparez les prix des produits que vous cherchez et trouvez la meilleure offre en Côte d'Ivoire.</p>
+      <div id="hero-search"></div>
+      <ul class="sugg" aria-label="Recherches fréquentes">${SUGGESTIONS.map(t => `<li><a href="#/s/${encodeURIComponent(t)}">${esc(t)}</a></li>`).join('')}</ul>
+    </div></section>`;
+  document.getElementById('hero-search').appendChild(sgForm);        // la même recherche (suggestions, photo) que dans l'en-tête
   if (!all.length) {
     app.insertAdjacentHTML('beforeend', `<p class="mut">Aucun produit pour le moment. Ajoutez des offres dans la base pour les voir ici.</p>`);
     return;
   }
-  if (cats.length) app.insertAdjacentHTML('beforeend', `<h2 class="first">Parcourir par catégorie</h2>
-    <div class="chips">${cats.map(c => `<a href="/c/${encodeURIComponent(c.slug)}">${esc(c.name)}</a>`).join('')}</div>`);
-  const shown = cmp.data.filter(p => liveInfo(p).shops > 1);          // vraiment comparables aujourd'hui
-  if (shown.length) app.insertAdjacentHTML('beforeend',
-    `<h2>Comparés entre boutiques</h2><div class="grid rail">${shown.map(p => card(p, disc)).join('')}</div>`);
+  if (cats.length) app.insertAdjacentHTML('beforeend', `<section id="categories"><h2 class="first">Parcourir par catégorie</h2>
+    <div class="cats">${cats.map(c => `<a class="cat" href="/c/${encodeURIComponent(c.slug)}">${catIcon(c.slug)}<span>${esc(c.name)}</span></a>`).join('')}</div></section>`);
   const deals = await dealsReq;
   if (!app.querySelector('.hero')) return;                 // le visiteur a changé de page pendant ce temps
   if (deals) app.insertAdjacentHTML('beforeend', deals);
+  app.insertAdjacentHTML('beforeend', `<section class="trust" aria-label="Ce que fait Ivoire Prix">
+    <div><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.4 8-8 9-4.6-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg><p><b>Prix comparés</b><span>Les prix de ${names.length ? names.length + ' boutiques' : 'plusieurs boutiques'}, relevés chaque jour.</span></p></div>
+    <div><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9l1.5-5h13L20 9"/><path d="M4 9v11h16V9"/><path d="M4 9a2.7 2.7 0 0 0 5.3 0 2.7 2.7 0 0 0 5.4 0A2.7 2.7 0 0 0 20 9"/></svg><p><b>Enseignes locales</b><span>Des boutiques en ligne de Côte d'Ivoire, avec un lien direct vers chacune.</span></p></div>
+    <div><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M9.5 9.5c0-1.2 1.1-2 2.5-2s2.5.8 2.5 2c0 3-5 1.8-5 4.8 0 1.2 1.1 2 2.5 2s2.5-.8 2.5-2"/></svg><p><b>Faites des économies</b><span>Voyez l'écart de prix entre les boutiques avant d'acheter.</span></p></div>
+  </section>`);
+  const shown = cmp.data.filter(p => liveInfo(p).shops > 1);          // vraiment comparables aujourd'hui
+  if (shown.length) app.insertAdjacentHTML('beforeend',
+    `<h2>Comparés entre boutiques</h2><div class="grid rail">${shown.map(p => card(p, disc)).join('')}</div>`);
+  const duel = heroTicket(cmp.data, shops);
+  if (duel) app.insertAdjacentHTML('beforeend', `<section class="duel"><div><h2>Le même produit, pas le même prix</h2>
+    <p>Chaque jour, Ivoire Prix relève les prix de ${esc(shopText)}. Cherchez un produit et achetez là où il coûte le moins.</p></div>${duel}</section>`);
+  app.querySelectorAll('.tk-gap .price').forEach(countUp);
+  app.insertAdjacentHTML('beforeend', `<section class="promo-band"><div><h2>Les bonnes affaires, catégorie par catégorie</h2>
+    <p>Dans chaque catégorie, cochez « En promotion » pour ne garder que les produits dont une boutique affiche un prix barré.</p></div>
+    <button type="button" class="btn primary" data-goto="categories">Choisir une catégorie</button></section>`);
   const seen = recentHtml();
   if (seen) app.insertAdjacentHTML('beforeend', seen);
 }
@@ -1328,7 +1538,7 @@ async function myAccount(favoris = false) {
                : '<span class="same">Prix inchangé depuis que vous le suivez</span>';
       }
       const tv = r.target_price != null ? Math.round(Number(r.target_price)) : '';
-      return `<div class="wcard">${card(p).replace(/<\/a>\s*$/, change + '</a>')}
+      return `<div class="wcard">${cardLink(p).replace(/<\/a>\s*$/, change + '</a>')}
         <form class="tgt" data-tgt="${esc(r.product_id)}">
           <label for="t-${esc(r.product_id)}">Me prévenir par e-mail à partir de (FCFA)</label>
           <div class="tgt-row"><input id="t-${esc(r.product_id)}" type="number" inputmode="numeric" min="1" step="1" value="${tv}" placeholder="${esc(String(Math.round(Number(p.min_price)) || ''))}">
@@ -1451,6 +1661,12 @@ async function route() {
   lastNav = clef();
   document.title = TITRE_ACCUEIL;
   const [kind, arg = ''] = routeOf().slice(2).split('/');
+  dockSearch();                                         // la recherche quitte l'accueil avant que la page soit vidée
+  const accueil = !['p', 'c', 's', 'photo', 'compte', 'favoris'].includes(kind);
+  document.body.classList.toggle('is-home', accueil);
+  const bkey = accueil ? 'home' : kind === 'c' ? 'cats' : kind;
+  document.querySelectorAll('#bnav [data-b]').forEach(b => b.dataset.b === bkey ? b.setAttribute('aria-current', 'page') : b.removeAttribute('aria-current'));
+  document.querySelectorAll('.mainnav a').forEach(a => accueil ? a.setAttribute('aria-current', 'page') : a.removeAttribute('aria-current'));
   document.querySelectorAll('#nav a').forEach(a =>      // souligne la catégorie affichée
     a.getAttribute('href') === '/' + routeOf().slice(2) ? a.setAttribute('aria-current', 'page') : a.removeAttribute('aria-current'));
   app.innerHTML = `<div class="skel" aria-busy="true"><span class="sr">Chargement…</span><div class="sk-t"></div><div class="sk-grid">${'<i></i>'.repeat(6)}</div></div>`;
@@ -1465,11 +1681,15 @@ async function route() {
     else await home();
   } catch (e) {
     console.error(e);
+    dockSearch();
     app.innerHTML = `<div class="err"><p>Les prix n'ont pas pu être chargés. Vérifiez votre connexion Internet, puis réessayez.</p>
       <button type="button" class="btn" id="retry">Réessayer</button></div>`;
     document.getElementById('retry').addEventListener('click', route);
   }
   window.scrollTo(0, 0);
+  refreshFollowed();
+  if (pendingScroll && accueil) { const id = pendingScroll; pendingScroll = ''; setTimeout(() => scrollToSection(id), 60); }
+  else pendingScroll = '';
   if (routedOnce) app.focus({preventScroll: true});   // annonce la nouvelle page aux lecteurs d'écran et place le clavier au bon endroit
   routedOnce = true;
 }
@@ -1485,6 +1705,68 @@ sgInput.setAttribute('aria-controls', 'sg');
 sgInput.setAttribute('aria-expanded', 'false');
 sgInput.setAttribute('autocomplete', 'off');
 let sgItems = [], sgActive = -1, sgTimer, sgSeq = 0;
+
+// L'emplacement de la recherche dans l'en-tête : sur l'accueil elle est déplacée dans la grande zone du haut, puis remise ici
+const sfAnchor = document.createComment('recherche');
+sgForm.before(sfAnchor);
+function dockSearch() { if (sgForm.previousSibling !== sfAnchor) sfAnchor.after(sgForm); }
+
+// Liens « Catégories » et « Promotions » : défilent jusqu'à la rubrique de l'accueil (on y revient d'abord si besoin)
+let pendingScroll = '';
+function scrollToSection(id) {
+  const el = document.getElementById(id);
+  if (el) el.scrollIntoView({behavior: window.matchMedia('(prefers-reduced-motion:reduce)').matches ? 'auto' : 'smooth', block: 'start'});
+}
+document.addEventListener('click', e => {
+  const b = e.target.closest && e.target.closest('[data-goto]');
+  if (!b) return;
+  e.preventDefault();
+  const id = b.getAttribute('data-goto');
+  if (document.body.classList.contains('is-home')) scrollToSection(id);
+  else { pendingScroll = id; go('#/'); }
+});
+
+// Cœur des cartes : « Suivre ce produit », la même liste (watchlist) que la fiche produit et que « Favoris »
+let followed = new Set();
+function paintHearts(root) {
+  root.querySelectorAll('button.heart').forEach(b => {
+    const on = followed.has(b.dataset.pid);
+    if (b.getAttribute('aria-pressed') === String(on)) return;
+    b.setAttribute('aria-pressed', String(on));
+    b.innerHTML = on ? ICON_HEART_ON : ICON_HEART;
+    b.title = on ? 'Ne plus suivre ce produit' : 'Suivre ce produit';
+  });
+}
+async function refreshFollowed() {
+  followed = new Set();
+  if (me && db) {
+    const {data} = await db.from('watchlist').select('product_id');
+    (data || []).forEach(r => followed.add(String(r.product_id)));
+  }
+  paintHearts(document);
+}
+new MutationObserver(() => paintHearts(app)).observe(app, {childList: true, subtree: true});
+document.addEventListener('click', async e => {
+  const b = e.target.closest && e.target.closest('button.heart');
+  if (!b) return;
+  e.preventDefault();
+  const id = b.dataset.pid, price = Number(b.dataset.price) || null;
+  if (!me) {                                              // comme sur la fiche produit : connexion, puis le suivi est ajouté
+    ss.set('ip_suivre', JSON.stringify({id, price, name: b.dataset.name || ''}));
+    ss.set('ip_retour', routeOf());
+    authNotice = '';
+    go('#/compte');
+    return;
+  }
+  const on = followed.has(id);
+  b.disabled = true;
+  const {error} = on ? await db.from('watchlist').delete().eq('product_id', id)
+                     : await db.from('watchlist').insert({product_id: id, price_at_follow: price});
+  b.disabled = false;
+  if (error && error.code !== '23505') return;
+  if (on) followed.delete(id); else followed.add(id);
+  paintHearts(document);
+});
 
 function closeSuggest() {
   sgBox.hidden = true;

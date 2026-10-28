@@ -1,0 +1,36 @@
+name: Plan du site
+
+# Chaque nuit, relit la liste des produits et réécrit sitemap*.xml (le plan du site lu par Google).
+# Dépôt public : les minutes d'exécution sont gratuites. Aucune clé secrète : la lecture utilise la clé publique de la page.
+on:
+  schedule:
+    - cron: '17 3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: plan-du-site
+  cancel-in-progress: false
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Écrire le plan du site
+        run: node scripts/generer-plan.mjs
+      - name: Publier s'il a changé
+        run: |
+          git config user.name "plan-du-site"
+          git config user.email "plan-du-site@users.noreply.github.com"
+          git add sitemap.xml sitemap-pages.xml sitemap-produits-*.xml
+          git add -u -- 'sitemap*.xml'
+          if git diff --cached --quiet; then echo "Plan du site inchangé."; exit 0; fi
+          git commit -m "Plan du site du $(date -u +%F)"
+          git push

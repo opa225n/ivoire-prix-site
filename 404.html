@@ -1476,7 +1476,7 @@ async function loginPage(mode) {
       const {data, error} = await db.auth.signUp({email: email(), password: pass, options: {emailRedirectTo: returnUrl()}});
       go.disabled = false;
       if (error) return msg(esc(frAuthError(error)));
-      if (!data.session) msg(`Presque fini : un e-mail de confirmation a été envoyé à <strong>${esc(email())}</strong>. Cliquez sur le lien qu'il contient pour activer votre compte.` +
+      if (!data.session) msg(`Si <strong>${esc(email())}</strong> n'a pas encore de compte, un e-mail de confirmation vient d'être envoyé : cliquez sur le lien qu'il contient pour l'activer. Vous avez déjà un compte ? <a href="#/compte" id="a-already">Connectez-vous</a> (ou utilisez « Mot de passe oublié ? »).` +
         (ss.get('ip_suivre') ? ' Le produit choisi sera suivi automatiquement et vous reviendrez sur sa fiche.' : ''), true);
     } else {
       const {error} = await db.auth.signInWithPassword({email: email(), password: pass});

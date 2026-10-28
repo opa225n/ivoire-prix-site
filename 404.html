@@ -1488,7 +1488,9 @@ async function loginPage(mode) {
       go.disabled = false;
       if (error) return msg(esc(frAuthError(error)));
       if (!data.session) msg(`Si <strong>${esc(email())}</strong> n'a pas encore de compte, un e-mail de confirmation vient d'être envoyé : cliquez sur le lien qu'il contient pour l'activer. Vous avez déjà un compte ? <a href="#/compte" id="a-already">Connectez-vous</a> (ou utilisez « Mot de passe oublié ? »).` +
-        (ss.get('ip_suivre') ? ' Le produit choisi sera suivi automatiquement et vous reviendrez sur sa fiche.' : ''), true);
+        (ss.get('ip_suivre') ? ' Le produit choisi sera suivi automatiquement et vous reviendrez sur sa fiche.' : '') +
+        ` <button type="button" class="link" id="a-confirmed">J'ai confirmé mon adresse : me connecter</button><span id="a-hint" role="status"></span>`, true);
+      if (!data.session) waitForConfirmation(email(), pass);
     } else {
       const {error} = await db.auth.signInWithPassword({email: email(), password: pass});
       go.disabled = false;
@@ -1545,6 +1547,26 @@ function infosPage(which) {
   const [titre, corps] = pages[which] || pages.mentions;
   document.title = titre + ' | Ivoire Prix';
   app.innerHTML = `<article class="legal"><h1>${titre}</h1><p class="maj">Mis à jour le ${MAJ_INFOS}</p>${corps}</article>`;
+}
+
+// Le lien de confirmation s'ouvre souvent dans une autre application ou un autre navigateur : cette page-ci ne le sait pas.
+// On garde l'adresse et le mot de passe saisis (en mémoire seulement) et on se connecte dès que la personne revient ou touche le bouton.
+function waitForConfirmation(mail, pass) {
+  let busy = false;
+  const hint = t => { const h = document.getElementById('a-hint'); if (h) h.textContent = t ? ' ' + t : ''; };
+  const attempt = async manual => {
+    if (busy || !document.getElementById('a-confirmed')) return;
+    busy = true;
+    const {error} = await db.auth.signInWithPassword({email: mail, password: pass});   // réussi : SIGNED_IN prend le relais (afterLogin)
+    busy = false;
+    if (error && manual) hint(/not confirmed/i.test(error.message) ? 'Adresse pas encore confirmée : cliquez d\'abord sur le lien reçu par e-mail.' : frAuthError(error));
+  };
+  document.getElementById('a-confirmed').addEventListener('click', () => attempt(true));
+  const back = () => {
+    if (!document.getElementById('a-confirmed')) return document.removeEventListener('visibilitychange', back);
+    if (document.visibilityState === 'visible') attempt(false);
+  };
+  document.addEventListener('visibilitychange', back);
 }
 
 function newPasswordPage() {

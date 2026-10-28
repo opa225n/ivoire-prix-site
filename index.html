@@ -608,6 +608,16 @@ header #sf .go{border-left:0;border-radius:999px;margin:3px}
 .wcard .card .img{background:var(--tile);border-radius:12px}
 .tgt-row input{border-radius:var(--r-m);border-width:1.5px}
 .tgt-row input:focus{outline:none;border-color:var(--ink);box-shadow:0 0 0 4px var(--orange-t)}
+
+/* Pages d'information (mentions légales, confidentialité) */
+.legal{max-width:70ch;margin:36px auto 24px}
+.legal h1{margin:0 0 8px}
+.legal h2{font-size:21px;margin:30px 0 8px}
+.legal p,.legal li{line-height:1.65}
+.legal ul{padding-left:20px}
+.legal .maj{color:var(--mut);font-size:14px}
+.foot-links{display:flex;flex-wrap:wrap;gap:6px 22px;margin:14px 0 0;padding:0;list-style:none}
+.foot-links a{color:inherit;text-decoration:underline;text-underline-offset:3px}
 </style>
 </head>
 <body>
@@ -623,6 +633,7 @@ header #sf .go{border-left:0;border-radius:999px;margin:3px}
 </div></header>
 <main class="wrap" id="app" tabindex="-1"><div class="skel" aria-busy="true"><span class="sr">Chargement…</span><div class="sk-t"></div><div class="sk-grid"><i></i><i></i><i></i><i></i><i></i><i></i></div></div></main>
 <footer class="foot"><div class="wrap"><p>Ivoire Prix relève chaque jour les prix affichés par les boutiques en ligne de Côte d'Ivoire. Le prix final, la livraison et la disponibilité se confirment sur le site de la boutique.</p>
+  <ul class="foot-links"><li><a href="#/infos/mentions">Mentions légales</a></li><li><a href="#/infos/confidentialite">Confidentialité</a></li><li><a href="#/infos/contact">Contact</a></li></ul>
   <div class="inst" id="inst" hidden>
     <button type="button" class="btn" id="inst-btn">Installer l'application</button>
     <p class="inst-ios" id="inst-ios" role="status" hidden>Sur iPhone et iPad : touchez le bouton Partager de Safari, puis « Sur l'écran d'accueil ».</p>
@@ -1493,6 +1504,49 @@ async function loginPage(mode) {
   });
 }
 
+// ====== Pages d'information ======
+// Seules valeurs à renseigner : l'éditeur du site et l'adresse de contact.
+const INFOS = {editeur: 'Vanie Bi Gohi Roland', email: 'vaniebigohiroland@tontine-ci.com'};
+const MAJ_INFOS = '28 octobre 2026';
+function infosPage(which) {
+  const mail = INFOS.email.includes('@') ? `<a href="mailto:${esc(INFOS.email)}">${esc(INFOS.email)}</a>` : esc(INFOS.email);
+  const pages = {
+    mentions: ['Mentions légales', `
+      <h2>Éditeur du site</h2>
+      <p>${esc(INFOS.editeur)}. Directeur de la publication : l'éditeur. Contact : ${mail}.</p>
+      <h2>Hébergement</h2>
+      <p>Les pages du site sont servies par GitHub Pages (GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis). Les prix et les comptes sont stockés chez Supabase.</p>
+      <h2>Ce que fait Ivoire Prix</h2>
+      <p>Ivoire Prix est un comparateur : il relève les prix affichés par les boutiques en ligne de Côte d'Ivoire et les range au même endroit. Ivoire Prix ne vend aucun produit et n'est pas partie à l'achat. Le prix final, la livraison, la garantie et la disponibilité se confirment sur le site de la boutique.</p>
+      <p>Les prix sont relevés automatiquement et peuvent avoir changé depuis. Une erreur de lecture est possible. Si vous voyez un prix qui vous paraît faux, écrivez-nous : ${mail}.</p>
+      <h2>Marques et images</h2>
+      <p>Les noms de produits, marques et photos appartiennent à leurs propriétaires et aux boutiques qui les publient. Ils sont affichés pour permettre la comparaison. Si vous en êtes titulaire et souhaitez qu'un élément soit retiré, écrivez-nous.</p>`],
+    confidentialite: ['Confidentialité', `
+      <h2>Ce que nous gardons</h2>
+      <ul>
+        <li><strong>Sans compte</strong> : rien n'est enregistré à votre sujet sur nos serveurs.</li>
+        <li><strong>Avec un compte</strong> : votre adresse e-mail et votre mot de passe (le mot de passe est protégé et géré par Supabase ; nous ne le voyons jamais). Si vous vous connectez avec Google ou Apple, nous recevons l'adresse e-mail de ce compte.</li>
+        <li><strong>Vos suivis</strong> : les produits que vous suivez, le prix visé et le dernier prix pour lequel vous avez été prévenu.</li>
+      </ul>
+      <h2>Pourquoi</h2>
+      <p>Uniquement pour faire fonctionner votre compte : vous connecter, retrouver vos produits suivis et vous écrire (confirmation d'inscription, changement de mot de passe, alerte quand un prix baisse). Nous ne vendons pas vos données et nous n'envoyons pas de publicité.</p>
+      <h2>Sur votre appareil</h2>
+      <p>Le site garde dans votre navigateur vos préférences d'affichage (liste ou grille, thème), vos dernières recherches et votre accord pour la recherche par photo, ainsi que votre connexion quand vous êtes connecté. Il n'y a ni cookie publicitaire, ni outil de statistiques.</p>
+      <h2>Recherche par photo</h2>
+      <p>Votre photo est analysée sur votre appareil. Elle n'est pas envoyée à nos serveurs. Seul le module de reconnaissance d'images est téléchargé la première fois.</p>
+      <h2>Services tiers</h2>
+      <p>Pour fonctionner, le site fait appel à Supabase (comptes et données), GitHub Pages (hébergement), Google Fonts (polices) et jsDelivr (bibliothèques). Ces services reçoivent votre adresse IP quand votre navigateur les contacte.</p>
+      <h2>Durée et vos droits</h2>
+      <p>Vos données sont gardées tant que votre compte existe. Vous pouvez demander à les consulter, les corriger ou supprimer votre compte à tout moment : ${mail}. Conformément à la loi ivoirienne n° 2013-450 du 19 juin 2013 sur la protection des données à caractère personnel, vous pouvez aussi vous adresser à l'ARTCI.</p>`],
+    contact: ['Contact', `
+      <p>Une question, un prix qui paraît faux, une demande de retrait ou de suppression de compte : écrivez-nous à ${mail}.</p>
+      <p>Si c'est un prix, indiquez la boutique et l'adresse de la fiche : cela nous permet de corriger plus vite.</p>`]
+  };
+  const [titre, corps] = pages[which] || pages.mentions;
+  document.title = titre + ' | Ivoire Prix';
+  app.innerHTML = `<article class="legal"><h1>${titre}</h1><p class="maj">Mis à jour le ${MAJ_INFOS}</p>${corps}</article>`;
+}
+
 function newPasswordPage() {
   if (!me) {
     app.innerHTML = `<div class="auth"><h1>Nouveau mot de passe</h1><p class="err">Ce lien a expiré ou a déjà servi.
@@ -1669,7 +1723,7 @@ async function route() {
   document.title = TITRE_ACCUEIL;
   const [kind, arg = ''] = routeOf().slice(2).split('/');
   dockSearch();                                         // la recherche quitte l'accueil avant que la page soit vidée
-  const accueil = !['p', 'c', 's', 'photo', 'compte', 'favoris'].includes(kind);
+  const accueil = !['p', 'c', 's', 'photo', 'compte', 'favoris', 'infos'].includes(kind);
   document.body.classList.toggle('is-home', accueil);
   const bkey = accueil ? 'home' : kind === 'c' ? 'cats' : kind;
   document.querySelectorAll('#bnav [data-b]').forEach(b => b.dataset.b === bkey ? b.setAttribute('aria-current', 'page') : b.removeAttribute('aria-current'));
@@ -1685,6 +1739,7 @@ async function route() {
     else if (kind === 'photo') await photoSearch();
     else if (kind === 'compte') await accountPage(v);
     else if (kind === 'favoris') await favorisPage();
+    else if (kind === 'infos') infosPage(v);
     else await home();
   } catch (e) {
     console.error(e);

@@ -1994,7 +1994,7 @@ window.addEventListener('scroll', () => {
 // Bouton « Installer l'application » : caché si l'application est déjà installée ou si le navigateur ne sait pas l'installer.
 // Android et ordinateur : le navigateur annonce « beforeinstallprompt » et on déclenche son invitation.
 // iPhone et iPad : aucune invitation n'existe, le bouton affiche la marche à suivre (Partager, puis Sur l'écran d'accueil).
-// Android : même chose quand le navigateur n'a pas (encore) proposé l'installation : la marche à suivre passe par son menu.
+// Sans invitation du navigateur, le bouton affiche les deux marches à suivre (iPhone et Android), quel que soit l'appareil.
 (() => {
   const zone = document.getElementById('inst'), bouton = document.getElementById('inst-btn');
   const aideApple = document.getElementById('inst-ios'), aideAndroid = document.getElementById('inst-android');
@@ -2002,7 +2002,6 @@ window.addEventListener('scroll', () => {
   const installee = () => navigator.standalone === true || (window.matchMedia && matchMedia('(display-mode: standalone)').matches);
   const apple = /iPhone|iPad|iPod/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
   const android = /Android/.test(navigator.userAgent);
-  const aide = apple ? aideApple : android ? aideAndroid : null;      // la marche à suivre qui correspond à l'appareil
   let invitation = null;
   const montrer = () => { if (!installee()) zone.hidden = false; };
   window.addEventListener('beforeinstallprompt', e => { e.preventDefault(); invitation = e; montrer(); });
@@ -2013,7 +2012,10 @@ window.addEventListener('scroll', () => {
       const demande = invitation; invitation = null;
       try { await demande.prompt(); await demande.userChoice; } catch (e) {}
       zone.hidden = true;
-    } else if (aide) { aide.hidden = !aide.hidden; }
+    } else {                                             // les deux marches à suivre, quel que soit l'appareil
+      const cacher = !aideApple.hidden;
+      aideApple.hidden = aideAndroid.hidden = cacher;
+    }
   });
 })();
 

@@ -3,6 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<script>
+// Le certificat HTTPS n'existe que pour ivoireprix.tontine-ci.com : qui arrive par la variante « www. » est renvoyé vers l'adresse principale
+if (location.hostname === 'www.ivoireprix.tontine-ci.com') location.replace('https://ivoireprix.tontine-ci.com' + location.pathname + location.search + location.hash);
+</script>
 <link rel="icon" type="image/svg+xml" href="/icons/icon.svg">
 <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
 <link rel="manifest" href="/manifest.webmanifest">

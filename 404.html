@@ -1534,7 +1534,9 @@ function infosPage(which) {
       <h2>Pourquoi</h2>
       <p>Uniquement pour faire fonctionner votre compte : vous connecter, retrouver vos produits suivis et vous écrire (confirmation d'inscription, changement de mot de passe, alerte quand un prix baisse). Nous ne vendons pas vos données et nous n'envoyons pas de publicité.</p>
       <h2>Sur votre appareil</h2>
-      <p>Le site garde dans votre navigateur vos préférences d'affichage (liste ou grille, thème), vos dernières recherches et votre accord pour la recherche par photo, ainsi que votre connexion quand vous êtes connecté. Il n'y a ni cookie publicitaire, ni outil de statistiques.</p>
+      <p>Le site garde dans votre navigateur vos préférences d'affichage (liste ou grille, thème), vos dernières recherches et votre accord pour la recherche par photo, ainsi que votre connexion quand vous êtes connecté. Il n'y a pas de cookie publicitaire.</p>
+      <h2>Statistiques de visites</h2>
+      <p>Le site compte lui-même ses visites, sans cookie et sans outil extérieur : le type de page vue (et l'adresse d'une fiche produit ou d'un rayon), l'appareil (mobile ou ordinateur), le site par lequel vous êtes arrivé, et un numéro de visite qui disparaît quand vous fermez l'onglet. Ni votre adresse IP, ni vos recherches, ni votre identité ne sont enregistrées dans ces statistiques.</p>
       <h2>Recherche par photo</h2>
       <p>Votre photo est analysée sur votre appareil. Elle n'est pas envoyée à nos serveurs. Seul le module de reconnaissance d'images est téléchargé la première fois.</p>
       <h2>Services tiers</h2>
@@ -1736,6 +1738,35 @@ document.addEventListener('click', e => {
   if (/^(#\/|\/(p|c)\/[^/]|\/$)/.test(h)) { e.preventDefault(); go(h); }
 });
 
+// ====== Statistiques de visites ======
+// Sans cookie, sans adresse IP, sans mot cherché : seulement le type de page (et l'adresse d'une fiche ou d'un rayon), l'appareil,
+// le site d'origine à l'arrivée et un numéro de visite qui disparaît à la fermeture de l'onglet. Rien n'est compté ailleurs que sur le vrai site.
+const STATS_HOTE = 'ivoireprix.tontine-ci.com';
+const STATS_ACTIVES = () => window.__STATS_TEST || (location.hostname === STATS_HOTE && !/bot|crawl|spider|lighthouse|headless/i.test(navigator.userAgent));
+const numeroDeVisite = () => {
+  const neuf = () => Math.random().toString(36).slice(2, 12) + Date.now().toString(36);
+  try { let v = sessionStorage.getItem('ip_vs'); if (!v) { v = neuf(); sessionStorage.setItem('ip_vs', v); } return v; } catch { return neuf(); }
+};
+let derniereVue = '', origineEnvoyee = false;
+function compterVisite(kind, arg) {
+  try {
+    if (!STATS_ACTIVES()) return;
+    const type = {p: 'produit', c: 'categorie', s: 'recherche', photo: 'photo', compte: 'compte', favoris: 'favoris', infos: 'infos'}[kind] || 'accueil';
+    const chemin = (type === 'produit' || type === 'categorie') ? '/' + kind + '/' + arg.slice(0, 150) : null;
+    const cle = type + '|' + (chemin || '');
+    if (cle === derniereVue) return;
+    derniereVue = cle;
+    let origine = null;
+    if (!origineEnvoyee) {
+      origineEnvoyee = true;
+      try { const h = document.referrer && new URL(document.referrer).hostname; if (h && h !== location.hostname) origine = h.slice(0, 100); } catch {}
+    }
+    const installee = !!(navigator.standalone || (window.matchMedia && matchMedia('(display-mode: standalone)').matches));
+    const ligne = {type, chemin, origine, appareil: matchMedia('(max-width: 720px)').matches ? 'mobile' : 'ordinateur', installee, session: numeroDeVisite()};
+    Promise.resolve(db.from('visites').insert(ligne)).then(() => {}, () => {});      // jamais d'erreur pour le visiteur
+  } catch {}
+}
+
 let routedOnce = false;
 async function route() {
   const old = document.getElementById('buybar');
@@ -1747,6 +1778,7 @@ async function route() {
   const [kind, arg = ''] = routeOf().slice(2).split('/');
   dockSearch();                                         // la recherche quitte l'accueil avant que la page soit vidée
   const accueil = !['p', 'c', 's', 'photo', 'compte', 'favoris', 'infos'].includes(kind);
+  compterVisite(kind, decodeURIComponent(arg));
   document.body.classList.toggle('is-home', accueil);
   const bkey = accueil ? 'home' : kind === 'c' ? 'cats' : kind;
   document.querySelectorAll('#bnav [data-b]').forEach(b => b.dataset.b === bkey ? b.setAttribute('aria-current', 'page') : b.removeAttribute('aria-current'));

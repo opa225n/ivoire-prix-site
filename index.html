@@ -637,6 +637,7 @@ header #sf .go{border-left:0;border-radius:999px;margin:3px}
   <div class="inst" id="inst" hidden>
     <button type="button" class="btn" id="inst-btn">Installer l'application</button>
     <p class="inst-ios" id="inst-ios" role="status" hidden>Sur iPhone et iPad : touchez le bouton Partager de Safari, puis « Sur l'écran d'accueil ».</p>
+    <p class="inst-ios" id="inst-android" role="status" hidden>Sur Android : ouvrez le menu du navigateur (les trois points ⋮ en haut à droite de Chrome), puis touchez « Installer l'application » ou « Ajouter à l'écran d'accueil ».</p>
   </div></div></footer>
 
 <nav class="bnav" id="bnav" aria-label="Navigation du téléphone">
@@ -1993,16 +1994,20 @@ window.addEventListener('scroll', () => {
 // Bouton « Installer l'application » : caché si l'application est déjà installée ou si le navigateur ne sait pas l'installer.
 // Android et ordinateur : le navigateur annonce « beforeinstallprompt » et on déclenche son invitation.
 // iPhone et iPad : aucune invitation n'existe, le bouton affiche la marche à suivre (Partager, puis Sur l'écran d'accueil).
+// Android : même chose quand le navigateur n'a pas (encore) proposé l'installation : la marche à suivre passe par son menu.
 (() => {
-  const zone = document.getElementById('inst'), bouton = document.getElementById('inst-btn'), aide = document.getElementById('inst-ios');
+  const zone = document.getElementById('inst'), bouton = document.getElementById('inst-btn');
+  const aideApple = document.getElementById('inst-ios'), aideAndroid = document.getElementById('inst-android');
   if (!zone || !bouton) return;
   const installee = () => navigator.standalone === true || (window.matchMedia && matchMedia('(display-mode: standalone)').matches);
   const apple = /iPhone|iPad|iPod/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+  const android = /Android/.test(navigator.userAgent);
+  const aide = apple ? aideApple : android ? aideAndroid : null;      // la marche à suivre qui correspond à l'appareil
   let invitation = null;
   const montrer = () => { if (!installee()) zone.hidden = false; };
   window.addEventListener('beforeinstallprompt', e => { e.preventDefault(); invitation = e; montrer(); });
   window.addEventListener('appinstalled', () => { invitation = null; zone.hidden = true; });
-  if (apple) montrer();
+  if (apple || android) montrer();
   bouton.addEventListener('click', async () => {
     if (invitation) {
       const demande = invitation; invitation = null;
